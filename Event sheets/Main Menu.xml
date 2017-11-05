@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Main Menu</name>
+    <events>
+        <event-block sid="565070556109711">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="237216275577701" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="316018096161505" type="Mouse">
+                    <param id="0" name="Cursor style">7</param>
+                </action>
+                <action id="0" name="Play" sid="958521591116488" type="Audio">
+                    <param id="0" name="Audio file">bgm</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Music: http://www.bensound.com/royalty-free-music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="987684523067751">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="456644344161735" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="306935647634068" type="cursor">
+                    <param id="0" name="X">mouse.X</param>
+                    <param id="1" name="Y">mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="147539930634264">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="979665997948719" type="Mouse">
+                    <param id="0" name="Object">mainmenuButtons</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Compare two values" sid="544337224442276" type="System">
+                    <param id="0" name="First value">mainmenuButtons.Width</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">175</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="395354677530081" type="mainmenuButtons">
+                    <param id="0" name="Width">175</param>
+                    <param id="1" name="Height">60</param>
+                </action>
+                <action id="25" name="Play at object" sid="971606516350325" type="Audio">
+                    <param id="0" name="Audio file">toolur_dettpp</param>
+                    <param id="1" name="Loop">0</param>
+                    <param id="2" name="Volume">25</param>
+                    <param id="3" name="Object">mainmenuButtons</param>
+                    <param id="4" name="Inner angle">360</param>
+                    <param id="5" name="Outer angle">360</param>
+                    <param id="6" name="Outer gain">0</param>
+                    <param id="7" name="Tag (optional)">&quot;http://www.freesfx.co.uk&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="871928873332558">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="637365036729804" type="Mouse">
+                    <param id="0" name="Object">mainmenuButtons</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="722566774894975" type="mainmenuButtons">
+                    <param id="0" name="Width">150</param>
+                    <param id="1" name="Height">50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="298668401140248">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="730754083525913" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">startButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="293444200370016" type="Audio">
+                    <param id="0" name="Audio file">glovebox_open</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;http://www.freesfx.co.uk&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="943493446185205" type="System">
+                    <param id="0" name="Layout">StartMenu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="605890462722892">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="152674588666632" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">loadButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="861711418841168" type="Audio">
+                    <param id="0" name="Audio file">glovebox_open</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;http://www.freesfx.co.uk&quot;</param>
+                </action>
+                <action disabled="1" id="-3" name="Create object" sid="896555198554799" type="System">
+                    <param id="0" name="Object to create">TiledBackground</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+                <action disabled="1" id="-16" name="Set opacity" sid="704653211727766" type="TiledBackground">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action disabled="1" id="-16" name="Wait" sid="151176356088008" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action disabled="1" id="-37" name="Load" sid="803131761328805" type="System">
+                    <param id="0" name="Slot">&quot;mysave&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="475038591514485" type="System">
+                    <param id="0" name="Layout">Load Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="526055043137606">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="917088982320927" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">1</param>
+                    <param id="2" name="Object clicked">exitButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="763172220021397" type="Audio">
+                    <param id="0" name="Audio file">glovebox_open</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;http://www.freesfx.co.uk&quot;</param>
+                </action>
+                <action id="1" name="Close" sid="997846135264674" type="Browser" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

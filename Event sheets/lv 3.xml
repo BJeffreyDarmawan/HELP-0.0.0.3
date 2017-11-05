@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>lv 3</name>
+    <events>
+        <include>lv complete</include>
+        <event-group description="" sid="798869279102705" title="gamepoint">
+            <sub-events>
+                <variable constant="0" name="a" sid="101063068588413" static="1" type="number">0</variable>
+                <variable constant="0" name="bush" sid="136382316394598" static="1" type="number">0</variable>
+                <event-block sid="303399296945254">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="127246379926006" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">bush</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="204111639328055" type="System">
+                            <param id="0" name="Variable">bush</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="264477085079624" type="bush">
+                            <param id="0" name="Object">anakSheep</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="484320543566557" type="System">
+                            <param id="0" name="Variable">a</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="548676340578239" type="System">
+                            <param id="0" name="Variable">bush</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <variable constant="0" name="cloud" sid="693470178338920" static="1" type="number">0</variable>
+                <event-block sid="424511173163780">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="661215932514118" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">cloudsheep</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="642111211525795" type="System">
+                            <param id="0" name="Variable">cloud</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="615960478249638" type="cloudsheep">
+                            <param id="0" name="Object">anakSheep</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="629035325685824" type="System">
+                            <param id="0" name="Variable">a</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="906770069825972" type="System">
+                            <param id="0" name="Variable">cloud</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <variable constant="0" name="invi" sid="866377141452401" static="1" type="number">0</variable>
+                <event-block sid="342567438293090">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="643471301085427" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">inviSprite</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="871488162301298" type="System">
+                            <param id="0" name="Variable">invi</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="835180602518727" type="System">
+                            <param id="0" name="Variable">a</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="663973274661083" type="System">
+                            <param id="0" name="Variable">invi</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="697771147724995">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="442317606148548" type="System">
+                            <param id="0" name="Variable">a</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="998894304432420" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="469550072501686" type="Function">
+                            <param id="0" name="Name">&quot;lv_complete&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="527813799986855">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="155935447165995" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="439086026691248" type="Conversation_bg">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="176576650389883" type="Conversation">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="627388672274737" type="Conversation">
+                    <param id="0" name="Text">&quot;Help Mama Sheep find 3 of her kids.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="443633579422560" type="System">
+                    <param id="0" name="Seconds">4</param>
+                </action>
+                <action id="0" name="Set text" sid="254406340869555" type="Conversation">
+                    <param id="0" name="Text">&quot;Some of Little Sheep might be hidden.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="912596026349018" type="System">
+                    <param id="0" name="Seconds">4</param>
+                </action>
+                <action id="0" name="Set text" sid="514526548387603" type="Conversation">
+                    <param id="0" name="Text">&quot;Try finding in places that look similar to the shape of sheep.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="203226863722880" type="System">
+                    <param id="0" name="Seconds">4</param>
+                </action>
+                <action id="-9" name="Destroy" sid="400131999489255" type="Conversation_bg" />
+                <action id="-9" name="Destroy" sid="923389429336649" type="Conversation" />
+            </actions>
+        </event-block>
+        <event-block sid="491872332414721">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="971718410612803" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">TiledBackground</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="708816440294297" type="TiledBackground">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="703740391351354" type="System">
+                    <param id="0" name="Variable">beenHere</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="295530296361624" type="System">
+                    <param id="0" name="Layout">Map 2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

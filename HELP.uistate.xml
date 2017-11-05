@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Map 2</layout>
+        <layout order="5">Map 4</layout>
+        <layout order="8">lv 5</layout>
+        <event-sheet order="1">Map 2</event-sheet>
+        <event-sheet order="2">lv 3</event-sheet>
+        <event-sheet order="3">lv 2</event-sheet>
+        <event-sheet order="4">moveNfn</event-sheet>
+        <event-sheet active="1" order="6">Map 4</event-sheet>
+        <event-sheet order="7">Map 1</event-sheet>
+        <event-sheet order="9">lv 5</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="1" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="0">
+        <family expanded="0" name="mainmenuButtons" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/Main Menu/" />
+        <folder expanded="0" path="object-folder/lv 1/" />
+        <folder expanded="1" path="object-folder/Map(1)/" />
+        <folder expanded="0" path="object-folder/Load Menu/" />
+        <folder expanded="0" path="object-folder/lvComplete/" />
+        <folder expanded="0" path="object-folder/Map(2)/" />
+        <folder expanded="0" path="object-folder/lv 2/" />
+        <folder expanded="0" path="object-folder/lv 3/" />
+        <folder expanded="0" path="object-folder/Map(3)/" />
+        <folder expanded="0" path="object-folder/lv 4/" />
+        <folder expanded="0" path="object-folder/lv 4/mobil/" />
+        <folder expanded="0" path="object-folder/lv 4/Rambu/" />
+        <folder expanded="0" path="object-folder/Start Menu/" />
+        <folder expanded="0" path="object-folder/lv 5/" />
+        <folder expanded="0" path="object-folder/Map(4)/" />
+        <folder expanded="0" path="object-folder/lv 6/" />
+        <folder expanded="0" path="object-folder/Map(5)/" />
+        <folder expanded="0" path="object-folder/Map(6)/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="0" path="layout-folder/maps/" />
+        <folder expanded="0" path="layout-folder/menus/" />
+        <folder expanded="1" path="layout-folder/levels/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="event-folder/maps/" />
+        <folder expanded="1" path="event-folder/levels/" />
+        <folder expanded="0" path="event-folder/menus/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="0" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/exitButton/" />
+        <folder expanded="1" path="animation-folder/loadButton/" />
+        <folder expanded="1" path="animation-folder/startButton/" />
+        <folder expanded="1" path="animation-folder/background/" />
+        <folder expanded="1" path="animation-folder/cursor/" />
+        <folder expanded="1" path="animation-folder/titleFont/" />
+        <folder expanded="1" path="animation-folder/princessAlice/" />
+        <folder expanded="1" path="animation-folder/Orange/" />
+        <folder expanded="1" path="animation-folder/Apple/" />
+        <folder expanded="1" path="animation-folder/X/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/castle/" />
+        <folder expanded="1" path="animation-folder/boulder/" />
+        <folder expanded="1" path="animation-folder/camp/" />
+        <folder expanded="1" path="animation-folder/forest/" />
+        <folder expanded="1" path="animation-folder/grannyHouse/" />
+        <folder expanded="1" path="animation-folder/invisibleTembok/" />
+        <folder expanded="1" path="animation-folder/Granny/" />
+        <folder expanded="1" path="animation-folder/loadNyet1/" />
+        <folder expanded="1" path="animation-folder/nameBut1/" />
+        <folder expanded="1" path="animation-folder/nameBut2/" />
+        <folder expanded="1" path="animation-folder/nameBut3/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/lvComp/" />
+        <folder expanded="1" path="animation-folder/clicktoCont/" />
+        <folder expanded="1" path="animation-folder/invisibleTembok2/" />
+        <folder expanded="1" path="animation-folder/tree1/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/tree2/" />
+        <folder expanded="1" path="animation-folder/wolf_sprite/" />
+        <folder expanded="1" path="animation-folder/baconaja/" />
+        <folder expanded="1" path="animation-folder/sausage/" />
+        <folder expanded="1" path="animation-folder/meat/" />
+        <folder expanded="1" path="animation-folder/leg/" />
+        <folder expanded="1" path="animation-folder/broc/" />
+        <folder expanded="1" path="animation-folder/carrot/" />
+        <folder expanded="1" path="animation-folder/bg_lv2/" />
+        <folder expanded="1" path="animation-folder/wolf/" />
+        <folder expanded="1" path="animation-folder/yuck/" />
+        <folder expanded="1" path="animation-folder/steak/" />
+        <folder expanded="1" path="animation-folder/bush/" />
+        <folder expanded="1" path="animation-folder/bg3/" />
+        <folder expanded="1" path="animation-folder/anakSheep/" />
+        <folder expanded="1" path="animation-folder/mamaSheep/" />
+        <folder expanded="1" path="animation-folder/cloudsheep/" />
+        <folder expanded="1" path="animation-folder/inviSprite/" />
+        <folder expanded="1" path="animation-folder/Sprite7/" />
+        <folder expanded="1" path="animation-folder/Sprite8/" />
+        <folder expanded="1" path="animation-folder/Sprite9/" />
+        <folder expanded="1" path="animation-folder/car_SHOWN/" />
+        <folder expanded="1" path="animation-folder/buletitem_SHOWN/" />
+        <folder expanded="1" path="animation-folder/wheel_dragThis_buletItemGone_thisgone_CARGO/" />
+        <folder expanded="1" path="animation-folder/stop_0/" />
+        <folder expanded="1" path="animation-folder/stop_1/" />
+        <folder expanded="1" path="animation-folder/stop2/" />
+        <folder expanded="1" path="animation-folder/Sprite10/" />
+        <folder expanded="1" path="animation-folder/Sprite11/" />
+        <folder expanded="1" path="animation-folder/Sprite12/" />
+        <folder expanded="1" path="animation-folder/Sprite13/" />
+        <folder expanded="1" path="animation-folder/Sprite14/" />
+        <folder expanded="1" path="animation-folder/Sprite15/" />
+        <folder expanded="1" path="animation-folder/bglv4/" />
+        <folder expanded="1" path="animation-folder/type_yourName/" />
+        <folder expanded="1" path="animation-folder/startButton2/" />
+        <folder expanded="1" path="animation-folder/bg_lv5/" />
+        <folder expanded="1" path="animation-folder/pohon_monyet/" />
+        <folder expanded="1" path="animation-folder/rumput_kucing/" />
+        <folder expanded="1" path="animation-folder/awan_elang/" />
+        <folder expanded="1" path="animation-folder/pond_frog/" />
+        <folder expanded="1" path="animation-folder/grass_lion/" />
+        <folder expanded="1" path="animation-folder/air/" />
+        <folder expanded="1" path="animation-folder/barn/" />
+        <folder expanded="1" path="animation-folder/pager/" />
+        <folder expanded="1" path="animation-folder/Sprite16/" />
+        <folder expanded="1" path="animation-folder/solidFaker/" />
+        <folder expanded="1" path="animation-folder/Sprite17/" />
+        <folder expanded="1" path="animation-folder/Sprite18/" />
+        <folder expanded="1" path="animation-folder/Sprite19/" />
+        <folder expanded="1" path="animation-folder/Sprite20/" />
+        <folder expanded="1" path="animation-folder/Sprite21/" />
+        <folder expanded="1" path="animation-folder/char/" />
+        <folder expanded="1" path="animation-folder/ncess/" />
+        <folder expanded="1" path="animation-folder/solidz/" />
+        <folder expanded="1" path="animation-folder/002_4_Small_Mazes/" />
+    </folders-expanded>
+</c2uistate>

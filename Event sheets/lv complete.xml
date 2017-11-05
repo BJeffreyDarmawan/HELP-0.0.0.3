@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>lv complete</name>
+    <events>
+        <event-block sid="931515440290647">
+            <conditions>
+                <condition id="0" name="On function" sid="946881188843024" type="Function">
+                    <param id="0" name="Name">&quot;lv_complete&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="383153186361834" type="System">
+                    <param id="0" name="Object to create">TiledBackground</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+                <action id="-3" name="Create object" sid="170611382118417" type="System">
+                    <param id="0" name="Object to create">lvComp</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">427</param>
+                    <param id="3" name="Y">231</param>
+                </action>
+                <action id="-3" name="Create object" sid="604852350601920" type="System">
+                    <param id="0" name="Object to create">clicktoCont</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">434</param>
+                    <param id="3" name="Y">343</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="161528393467228" type="TiledBackground">
+                    <param id="0" name="Opacity">70</param>
+                </action>
+                <action id="0" name="Call function" sid="750851960827110" type="Function">
+                    <param id="0" name="Name">&quot;re&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="770940880237677">
+            <conditions>
+                <condition id="0" name="On function" sid="243977325460538" type="Function">
+                    <param id="0" name="Name">&quot;re&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="213527601557145">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="808881176135756" type="System">
+                            <param id="0" name="First value">TiledBackground.Opacity</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="213047588504063" type="Text">
+                            <param id="0" name="Text">&quot;AAAAAAAAAAA&quot;</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="514354062297947" type="TiledBackground">
+                            <param id="0" name="Opacity">TiledBackground.Opacity+3</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="609044244810177" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="381544859384263" type="Function">
+                            <param id="0" name="Name">&quot;re&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="474620764845490">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="877621356893575" type="TiledBackground">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Opacity">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="988615744643966" type="Text">
+                            <param id="0" name="Text">TiledBackground.Opacity</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="963343347066691">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="457224433716188" type="Keyboard">
+                    <param id="0" name="Key">83 (S)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-36" name="Save" sid="303914457042827" type="System">
+                    <param id="0" name="Slot">&quot;mysave&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

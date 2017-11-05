@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>lv 2</name>
+    <events>
+        <include>lv complete</include>
+        <event-block sid="363974540946349">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="562012274295550" type="yuck">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="763229904346140" type="Function">
+                    <param id="0" name="Name">&quot;fadeOutYuck&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="154144126812479">
+            <conditions>
+                <condition id="0" name="On function" sid="579633948310741" type="Function">
+                    <param id="0" name="Name">&quot;fadeOutYuck&quot;</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="725125193097021" type="yuck">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Opacity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="228881539021883" type="yuck">
+                    <param id="0" name="Opacity">yuck.Opacity-5</param>
+                </action>
+                <action id="-16" name="Wait" sid="409238113390478" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Call function" sid="932616314347247" type="Function">
+                    <param id="0" name="Name">&quot;fadeOutYuck&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="543646654490639">
+            <conditions>
+                <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="150251308531936" type="broc" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="695312084119888">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="286385862538401" type="broc">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="X co-ordinate">broc.posx</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="260280448587884" type="broc">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="Y co-ordinate">broc.posy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="467138053941579" type="broc">
+                            <param id="0" name="X">lerp(broc.X, broc.posx, 0.1)</param>
+                            <param id="1" name="Y">lerp(broc.Y, broc.posy, 0.1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="325374710792959">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="676240774959193" type="broc">
+                            <param id="0" name="Object">wolf</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="148735158441845" type="yuck">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="220522971592179">
+            <conditions>
+                <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="762364043398121" type="carrot" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="625317989389921">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="104128365316731" type="carrot">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="X co-ordinate">carrot.posx</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="215808535340425" type="carrot">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="Y co-ordinate">carrot.posy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="950523889886515" type="carrot">
+                            <param id="0" name="X">lerp(carrot.X, carrot.posx, 0.1)</param>
+                            <param id="1" name="Y">lerp(carrot.Y, carrot.posy, 0.1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="405014222851811">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="502233449720309" type="carrot">
+                            <param id="0" name="Object">wolf</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="896401933396639" type="yuck">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="560443491002937">
+            <conditions>
+                <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="285437064349721" type="baconaja" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="631704517969672">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="944417601612222" type="baconaja">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="X co-ordinate">baconaja.posx</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="697341531663755" type="baconaja">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="Y co-ordinate">baconaja.posy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="699523744114948" type="baconaja">
+                            <param id="0" name="X">lerp(baconaja.X, baconaja.posx, 0.1)</param>
+                            <param id="1" name="Y">lerp(baconaja.Y, baconaja.posy, 0.1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="821408469622338">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="127734055391731" type="baconaja">
+                            <param id="0" name="Object">wolf</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="770736208712496" type="baconaja" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="427352924989636">
+            <conditions>
+                <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="858816368990498" type="leg" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="393607530196118">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="411443932080075" type="leg">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="X co-ordinate">leg.posx</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="459869433852026" type="leg">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="Y co-ordinate">leg.posy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="237927263374248" type="leg">
+                            <param id="0" name="X">lerp(leg.X, leg.posx, 0.1)</param>
+                            <param id="1" name="Y">lerp(leg.Y, leg.posy, 0.1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="891016914772851">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="307116613651325" type="leg">
+                            <param id="0" name="Object">wolf</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="443714621029215" type="leg" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="592870298773133">
+            <conditions>
+                <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="515048216312083" type="meat" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="971808555421243">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="375886902369748" type="meat">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="X co-ordinate">meat.posx</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="837769270725728" type="meat">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="Y co-ordinate">meat.posy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="861229539939914" type="meat">
+                            <param id="0" name="X">lerp(meat.X, meat.posx, 0.1)</param>
+                            <param id="1" name="Y">lerp(meat.Y, meat.posy, 0.1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="748925419940124">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="717308925089813" type="meat">
+                            <param id="0" name="Object">wolf</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="764842866562470" type="meat" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="776241390038990">
+            <conditions>
+                <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="770024726490901" type="sausage" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="743562527321281">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="102235994814792" type="sausage">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="X co-ordinate">sausage.posx</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="713816157778093" type="sausage">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="Y co-ordinate">sausage.posy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="124759126064524" type="sausage">
+                            <param id="0" name="X">lerp(sausage.X, sausage.posx, 0.1)</param>
+                            <param id="1" name="Y">lerp(sausage.Y, sausage.posy, 0.1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="475428606472649">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="551018751919214" type="sausage">
+                            <param id="0" name="Object">wolf</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="193960574454330" type="sausage" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="605357470130715">
+            <conditions>
+                <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="211190732350267" type="steak" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="964236061061870">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="110955544524552" type="steak">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="X co-ordinate">steak.posx</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="545813819951188" type="steak">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="Y co-ordinate">steak.posy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="997743405600233" type="steak">
+                            <param id="0" name="X">lerp(steak.X, steak.posx, 0.1)</param>
+                            <param id="1" name="Y">lerp(steak.Y, steak.posy, 0.1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="756019696457256">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="793111579257940" type="steak">
+                            <param id="0" name="Object">wolf</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="863162291247932" type="steak" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="250005975576991">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="506134948584478" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="463556170834770" type="Function">
+                    <param id="0" name="Name">&quot;setPositionVariables&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-15" name="Set visible" sid="924423217007046" type="Conversation_bg">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="876755796044745" type="Conversation">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="927911916734207" type="Conversation">
+                    <param id="0" name="Text">&quot;Help Little wolf eating his meal by draging the foods towards him.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="698108866947168" type="System">
+                    <param id="0" name="Seconds">4</param>
+                </action>
+                <action id="0" name="Set text" sid="757966366529146" type="Conversation">
+                    <param id="0" name="Text">&quot;Little Wolf does not like vegetables, he only eats meat.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="901976766457608" type="System">
+                    <param id="0" name="Seconds">4</param>
+                </action>
+                <action id="-9" name="Destroy" sid="690730424160385" type="Conversation_bg" />
+                <action id="-9" name="Destroy" sid="577808383901089" type="Conversation" />
+            </actions>
+        </event-block>
+        <event-block sid="491345634924368">
+            <conditions>
+                <condition id="0" name="On function" sid="842475699691105" type="Function">
+                    <param id="0" name="Name">&quot;setPositionVariables&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="100735134196720">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="423214051258496" type="baconaja">
+                            <param id="0" name="Instance variable">posx</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="868148390375601" type="baconaja">
+                            <param id="0" name="Instance variable">posx</param>
+                            <param id="1" name="Value">baconaja.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="667557423156102" type="baconaja">
+                            <param id="0" name="Instance variable">posy</param>
+                            <param id="1" name="Value">baconaja.Y</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="255469208791640" type="broc">
+                            <param id="0" name="Instance variable">posx</param>
+                            <param id="1" name="Value">broc.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="973354684262860" type="broc">
+                            <param id="0" name="Instance variable">posy</param>
+                            <param id="1" name="Value">broc.Y</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="255839925915638" type="carrot">
+                            <param id="0" name="Instance variable">posx</param>
+                            <param id="1" name="Value">carrot.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="716081061738376" type="carrot">
+                            <param id="0" name="Instance variable">posy</param>
+                            <param id="1" name="Value">carrot.Y</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="367434593842698" type="leg">
+                            <param id="0" name="Instance variable">posx</param>
+                            <param id="1" name="Value">leg.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="487892611513401" type="leg">
+                            <param id="0" name="Instance variable">posy</param>
+                            <param id="1" name="Value">leg.Y</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="454722779871363" type="meat">
+                            <param id="0" name="Instance variable">posx</param>
+                            <param id="1" name="Value">meat.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="307684002238147" type="meat">
+                            <param id="0" name="Instance variable">posy</param>
+                            <param id="1" name="Value">meat.Y</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="349372961529349" type="sausage">
+                            <param id="0" name="Instance variable">posx</param>
+                            <param id="1" name="Value">sausage.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="705991006627514" type="sausage">
+                            <param id="0" name="Instance variable">posy</param>
+                            <param id="1" name="Value">sausage.Y</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="114405685188055" type="steak">
+                            <param id="0" name="Instance variable">posx</param>
+                            <param id="1" name="Value">steak.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="950632738901610" type="steak">
+                            <param id="0" name="Instance variable">posy</param>
+                            <param id="1" name="Value">steak.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="399274790494836">
+            <conditions>
+                <condition id="-31" inverted="1" name="Object UID exists" sid="992441084453726" type="System">
+                    <param id="0" name="UID">baconaja.UID</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="738968278146493">
+                    <conditions>
+                        <condition id="-31" inverted="1" name="Object UID exists" sid="334054381662809" type="System">
+                            <param id="0" name="UID">sausage.UID</param>
+                        </condition>
+                        <condition id="-31" inverted="1" name="Object UID exists" sid="291042563288472" type="System">
+                            <param id="0" name="UID">meat.UID</param>
+                        </condition>
+                        <condition id="-31" inverted="1" name="Object UID exists" sid="653357342471137" type="System">
+                            <param id="0" name="UID">leg.UID</param>
+                        </condition>
+                        <condition id="-31" inverted="1" name="Object UID exists" sid="411810645331808" type="System">
+                            <param id="0" name="UID">steak.UID</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="373333535544780" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="251971042953774" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="0" name="Call function" sid="963950794762810" type="Function">
+                            <param id="0" name="Name">&quot;lv_Complete&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Set text" sid="785135407604122" type="Text">
+                            <param id="0" name="Text">&quot;AAAAAAAa&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="687476750887713">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="430425167276186" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">TiledBackground</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="610891970983257" type="System">
+                    <param id="0" name="First value">TiledBackground.Opacity</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="736779730958716" type="System">
+                    <param id="0" name="Layout">Map 2</param>
+                </action>
+                <action id="-10" name="Add to" sid="747958388424836" type="System">
+                    <param id="0" name="Variable">beenHere</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

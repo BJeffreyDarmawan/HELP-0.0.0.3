@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>lv 5</name>
+    <events>
+        <event-group description="" sid="522351053419601" title="ALL IN HERE">
+            <sub-events>
+                <variable constant="0" name="MOUSECLICK" sid="382484072190096" static="1" type="number">0</variable>
+                <comment>nanti gw kasih intro of animal sounds nya.. ngidenya mau bendanya membesar ato geter pas muter animal soundnya?</comment>
+                <event-block sid="479405316435544">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="731199875112295" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="448129398286861" type="Conversation_bg">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="511171577632909" type="Conversation">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="318133649397035" type="Conversation">
+                            <param id="0" name="Text">&quot;Help Granny find her lost kitten.&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="628616038554782" type="System">
+                            <param id="0" name="Seconds">4</param>
+                        </action>
+                        <action id="0" name="Set text" sid="298968425278063" type="Conversation">
+                            <param id="0" name="Text">&quot;Listen to the sounds of each object.&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="110700725536213" type="System">
+                            <param id="0" name="Seconds">4</param>
+                        </action>
+                        <action id="0" name="Set text" sid="847865479227238" type="Conversation">
+                            <param id="0" name="Text">&quot;Click on the object that has a kitten&apos;s sound.&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="804377135439286" type="System">
+                            <param id="0" name="Seconds">4</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="393731699650981" type="Conversation_bg" />
+                        <action id="-9" name="Destroy" sid="451876744932972" type="Conversation" />
+                        <action id="-10" name="Add to" sid="903981882392274" type="System">
+                            <param id="0" name="Variable">MOUSECLICK</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>tiap click play sound lagi</comment>
+                <event-block sid="785670171164856">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="889768948925546" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">awan_elang</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="500988152551451" type="System">
+                            <param id="0" name="Variable">MOUSECLICK</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="500328824537174">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="416921578959421" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">grass_lion</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="927024682779046" type="System">
+                            <param id="0" name="Variable">MOUSECLICK</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="316536244295581">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="333474351380333" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">pohon_monyet</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="593471717027637" type="System">
+                            <param id="0" name="Variable">MOUSECLICK</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="838926040734172">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="741485263583474" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">pond_frog</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="987458632053054" type="System">
+                            <param id="0" name="Variable">MOUSECLICK</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <comment>play sound dlu</comment>
+                <event-block sid="884999709104166">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="651223887644534" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">rumput_kucing</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="434974392245160" type="System">
+                            <param id="0" name="Variable">MOUSECLICK</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="726335647500827" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="0" name="Call function" sid="784430291140991" type="Function">
+                            <param id="0" name="Name">&quot;lv_complete&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="181103148277229">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="615059890182917" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">TiledBackground</param>
+                        </condition>
+                        <condition id="-10" name="Compare opacity" sid="591883900156570" type="TiledBackground">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Opacity">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="552945239310523" type="System">
+                            <param id="0" name="Variable">beenHere</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="839101663558262" type="System">
+                            <param id="0" name="Layout">Map 2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

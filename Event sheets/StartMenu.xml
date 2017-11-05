@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>StartMenu</name>
+    <events>
+        <event-block sid="972762604460045">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="414427315372224" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="688837997336356" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="909647651141295">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="411654447733600" type="Mouse">
+                    <param id="0" name="Object">startButton2</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Compare two values" sid="539226832402717" type="System">
+                    <param id="0" name="First value">startButton2.Width</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">175</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="217396051556756" type="startButton2">
+                    <param id="0" name="Width">175</param>
+                    <param id="1" name="Height">60</param>
+                </action>
+                <action id="25" name="Play at object" sid="351655097375303" type="Audio">
+                    <param id="0" name="Audio file">toolur_dettpp</param>
+                    <param id="1" name="Loop">0</param>
+                    <param id="2" name="Volume">25</param>
+                    <param id="3" name="Object">mainmenuButtons</param>
+                    <param id="4" name="Inner angle">360</param>
+                    <param id="5" name="Outer angle">360</param>
+                    <param id="6" name="Outer gain">0</param>
+                    <param id="7" name="Tag (optional)">&quot;http://www.freesfx.co.uk&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="443259568996182">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="975240858592615" type="Mouse">
+                    <param id="0" name="Object">startButton2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="468797005006084" type="startButton2">
+                    <param id="0" name="Width">150</param>
+                    <param id="1" name="Height">50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="242058017999057">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="718491323766186" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">startButton2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="194883221161456" type="System">
+                    <param id="0" name="Variable">name</param>
+                    <param id="1" name="Value">TextBox.Text</param>
+                </action>
+                <action id="-9" name="Set value" sid="847086440923272" type="System">
+                    <param id="0" name="Variable">story</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="329932233892896" type="System">
+                    <param id="0" name="Variable">conv</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Call function" sid="528345107623430" type="Function">
+                    <param id="0" name="Name">&quot;SAVE_WOI&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="856258115870823">
+            <conditions>
+                <condition id="0" name="On function" sid="301073022305697" type="Function">
+                    <param id="0" name="Name">&quot;SAVE_WOI&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Check item exists" sid="458618085844826" type="LocalStorage">
+                    <param id="0" name="Key">&quot;user1&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="144123624258035">
+            <conditions>
+                <condition id="9" name="On item exists" sid="662141827303826" type="LocalStorage">
+                    <param id="0" name="Key">&quot;user1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Check item exists" sid="353374822679646" type="LocalStorage">
+                    <param id="0" name="Key">&quot;user2&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="971978310680185">
+            <conditions>
+                <condition id="9" name="On item exists" sid="892444718043781" type="LocalStorage">
+                    <param id="0" name="Key">&quot;user2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Check item exists" sid="236206831847500" type="LocalStorage">
+                    <param id="0" name="Key">&quot;user3&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>abis user3 exists, which do you want to overwrite BIKINNNNNNNN</comment>
+        <event-block sid="663267372224098">
+            <conditions>
+                <condition id="9" name="On item exists" sid="460831168280357" type="LocalStorage">
+                    <param id="0" name="Key">&quot;user3&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="712667495724511">
+            <conditions>
+                <condition id="10" name="On item missing" sid="326540742596163" type="LocalStorage">
+                    <param id="0" name="Key">&quot;user1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="657425416259823" type="LocalStorage">
+                    <param id="0" name="Key">&quot;user1&quot;</param>
+                    <param id="1" name="Value">name</param>
+                </action>
+                <action id="0" name="Set item" sid="902399185627094" type="LocalStorage">
+                    <param id="0" name="Key">&quot;stage1&quot;</param>
+                    <param id="1" name="Value">story</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="415595944163056">
+            <conditions>
+                <condition id="10" name="On item missing" sid="126597023182816" type="LocalStorage">
+                    <param id="0" name="Key">&quot;user2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="683466514334229" type="LocalStorage">
+                    <param id="0" name="Key">&quot;user2&quot;</param>
+                    <param id="1" name="Value">name</param>
+                </action>
+                <action id="0" name="Set item" sid="175555482417044" type="LocalStorage">
+                    <param id="0" name="Key">&quot;stage2&quot;</param>
+                    <param id="1" name="Value">story</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="505003281745764">
+            <conditions>
+                <condition id="10" name="On item missing" sid="333764558132276" type="LocalStorage">
+                    <param id="0" name="Key">&quot;user3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="557660159892365" type="LocalStorage">
+                    <param id="0" name="Key">&quot;user3&quot;</param>
+                    <param id="1" name="Value">name</param>
+                </action>
+                <action id="0" name="Set item" sid="711664235168852" type="LocalStorage">
+                    <param id="0" name="Key">&quot;stage3&quot;</param>
+                    <param id="1" name="Value">story</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

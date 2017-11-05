@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>moveNfn</name>
+    <events>
+        <event-block sid="255103664289211">
+            <conditions>
+                <condition behavior="8Direction" id="0" name="Is moving" sid="169677078016440" type="char" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="170546300764766">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="330635110012534" type="System">
+                            <param id="0" name="First value">char.8Direction.MovingAngle</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">-90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="935468644415571" type="char">
+                            <param id="0" name="Animation">&quot;up&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="723430672654633">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="274385457132981" type="System">
+                            <param id="0" name="First value">char.8Direction.MovingAngle</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="374784634701380" type="char">
+                            <param id="0" name="Animation">&quot;right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="958088481152263">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="516474825900278" type="System">
+                            <param id="0" name="First value">char.8Direction.MovingAngle</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="403245611829937" type="char">
+                            <param id="0" name="Animation">&quot;down&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="859882376843745">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="219902893126461" type="System">
+                            <param id="0" name="First value">char.8Direction.MovingAngle</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">180</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="311003976235757" type="char">
+                            <param id="0" name="Animation">&quot;left&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="804490089158028">
+            <conditions>
+                <condition id="0" name="On function" sid="530483465945839" type="Function">
+                    <param id="0" name="Name">&quot;createMSGDialog&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="185469490263697" type="System">
+                    <param id="0" name="Object to create">Conversation_bg</param>
+                    <param id="1" name="Layer">6</param>
+                    <param id="2" name="X">17</param>
+                    <param id="3" name="Y">352</param>
+                </action>
+                <action id="-3" name="Create object" sid="869151911748118" type="System">
+                    <param id="0" name="Object to create">Speaker</param>
+                    <param id="1" name="Layer">6</param>
+                    <param id="2" name="X">30.611</param>
+                    <param id="3" name="Y">364.27</param>
+                </action>
+                <action id="-3" name="Create object" sid="448692164755561" type="System">
+                    <param id="0" name="Object to create">Conversation</param>
+                    <param id="1" name="Layer">6</param>
+                    <param id="2" name="X">31.477</param>
+                    <param id="3" name="Y">387.627</param>
+                </action>
+                <action id="-15" name="Set visible" sid="143340178754698" type="Conversation">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="676610830438193" type="Speaker">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="281731979400882" type="Conversation_bg">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="864000713167768">
+            <conditions>
+                <condition id="0" name="On function" sid="157689233728479" type="Function">
+                    <param id="0" name="Name">&quot;story&quot;</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Compare two values" sid="791039252646641" type="System">
+                    <param id="0" name="First value">xml.StringValue(&quot;/story/conversation[@id=&apos;conv&quot;&amp;conv&amp;&quot;&apos;]/text()&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;000&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="184428964604702" type="Conversation">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="943001088007305" type="Conversation_bg">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Call function" sid="713596996885301" type="Function">
+                    <param id="0" name="Name">&quot;setSpeaker&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-15" name="Set visible" sid="317940355928127" type="Speaker">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="797025585618835" type="Conversation">
+                    <param id="0" name="Text">conv</param>
+                </action>
+                <action id="-16" name="Wait" sid="428892909387554" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="0" name="Set text" sid="285521477413379" type="Conversation">
+                    <param id="0" name="Text">xml.StringValue(&quot;/story/conversation[@id=&apos;conv&quot;&amp;conv&amp;&quot;&apos;]/text()&quot;)</param>
+                </action>
+                <action id="-16" name="Wait" sid="428291310616249" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="-10" name="Add to" sid="874553561497759" type="System">
+                    <param id="0" name="Variable">conv</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Call function" sid="354016635202498" type="Function">
+                    <param id="0" name="Name">&quot;story&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="210294151741990">
+            <conditions>
+                <condition id="0" name="On function" sid="816534874606697" type="Function">
+                    <param id="0" name="Name">&quot;importAJAX&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Request project file" sid="632357056536636" type="AJAX">
+                    <param id="0" name="Tag">&quot;convo&quot;</param>
+                    <param id="1" name="File">conv.xml</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="514234821783408">
+            <conditions>
+                <condition id="0" name="On completed" sid="266142616977439" type="AJAX">
+                    <param id="0" name="Tag">&quot;convo&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Load" sid="529807332384794" type="XML">
+                    <param id="0" name="XML">AJAX.LastData</param>
+                </action>
+                <action id="0" name="Call function" sid="928613517649529" type="Function">
+                    <param id="0" name="Name">&quot;story&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="208921616993575">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="904565960578730" type="System">
+                    <param id="0" name="First value">char.Bullet.Speed</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="595585402629464">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="933413004484209" type="System">
+                            <param id="0" name="First value">char.Bullet.AngleOfMotion</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">-90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="447365774453192" type="char">
+                            <param id="0" name="Animation">&quot;up&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="452472603823933">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="441564090446151" type="System">
+                            <param id="0" name="First value">char.Bullet.AngleOfMotion</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="152699808827368" type="char">
+                            <param id="0" name="Animation">&quot;right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="941152506931231">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="835423527363639" type="System">
+                            <param id="0" name="First value">char.Bullet.AngleOfMotion</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="560680761748341" type="char">
+                            <param id="0" name="Animation">&quot;down&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="990358113467762">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="787906370315187" type="System">
+                            <param id="0" name="First value">char.Bullet.AngleOfMotion</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">180</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="874319731958879" type="char">
+                            <param id="0" name="Animation">&quot;left&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="894919156433587">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="699378916530234" type="System">
+                    <param id="0" name="First value">ncess.Bullet.Speed</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="818710864485674">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="778912024209618" type="System">
+                            <param id="0" name="First value">ncess.Bullet.AngleOfMotion</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">-90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="888624747724350" type="ncess">
+                            <param id="0" name="Animation">&quot;up&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="315483493157630">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="408518374493535" type="System">
+                            <param id="0" name="First value">ncess.Bullet.AngleOfMotion</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="119909049438056" type="ncess">
+                            <param id="0" name="Animation">&quot;right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="231280420443274">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="290378373876772" type="System">
+                            <param id="0" name="First value">ncess.Bullet.AngleOfMotion</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="381452646455927" type="ncess">
+                            <param id="0" name="Animation">&quot;down&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="545140989884051">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="262396099724069" type="System">
+                            <param id="0" name="First value">ncess.Bullet.AngleOfMotion</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">180</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="561508690552004" type="ncess">
+                            <param id="0" name="Animation">&quot;left&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="205300544285949">
+            <conditions>
+                <condition id="0" name="On function" sid="226343154383636" type="Function">
+                    <param id="0" name="Name">&quot;saveGame&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="151074379766745" type="LocalStorage">
+                    <param id="0" name="Key">&quot;stage&quot;&amp;user</param>
+                    <param id="1" name="Value">story</param>
+                </action>
+                <action id="-15" name="Set visible" sid="566969359128211" type="Conversation">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="785152727018673" type="Conversation">
+                    <param id="0" name="Text">&quot;AAAA&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="178700769252181">
+            <conditions>
+                <condition id="0" name="On item set" sid="223154929570381" type="LocalStorage">
+                    <param id="0" name="Key">&quot;stage&quot;&amp;user</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="885425643548303" type="LocalStorage">
+                    <param id="0" name="Key">&quot;stage&quot;&amp;user</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="573311366848637">
+            <conditions>
+                <condition id="1" name="On item get" sid="267577488635910" type="LocalStorage">
+                    <param id="0" name="Key">&quot;stage&quot;&amp;user</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="948999668286135" type="Conversation">
+                    <param id="0" name="Text">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
