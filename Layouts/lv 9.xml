@@ -2,7 +2,7 @@
 <c2layout>
     <name>lv 9</name>
     <sid>949741876269524</sid>
-    <event-sheet></event-sheet>
+    <event-sheet>lv 9</event-sheet>
     <size>
         <width>1708</width>
         <height>960</height>
@@ -28,7 +28,79 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="Sprite28" uid="971">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>451.673156738</x>
+                        <y>204.240158081</y>
+                        <z>0</z>
+                        <width>1039.756835938</width>
+                        <height>513.981689453</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500103116</hotspotX>
+                        <hotspotY>0.432206929</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite27" uid="972">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>742</x>
+                        <y>366</y>
+                        <z>0</z>
+                        <width>222.67338562</width>
+                        <height>195.407272339</height>
+                        <depth>0</depth>
+                        <hotspotX>0.496173471</hotspotX>
+                        <hotspotY>0.483284891</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Lirik" uid="973">
+                    <properties>
+                        <text>LIRIK LAGU</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Small Fonts,-37,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>204</x>
+                        <y>59</y>
+                        <z>0</z>
+                        <width>439</width>
+                        <height>539</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
     </layers>

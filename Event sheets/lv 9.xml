@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>lv 9</name>
+    <events>
+        <event-block sid="827541620772755">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="986187766535368" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="943728155966998" type="Lirik">
+                    <param id="0" name="Text">&quot;Twinkle, twinkle, little star&#x0D;&#x0A;How I wonder what you are&#x0D;&#x0A;Up above the world so high&#x0D;&#x0A;Like a diamond in the sky&#x0D;&#x0A;Twinkle, twinkle little star&#x0D;&#x0A;How I wonder what you are&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
