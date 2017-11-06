@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>lv 7</name>
+    <events>
+        <include>lv complete</include>
+        <event-block sid="724442682443615">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="189642287943753" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="371236413092650" type="Function">
+                    <param id="0" name="Name">&quot;setPositionVariables&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="597387007822347">
+            <conditions>
+                <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="624236499992469" type="yellow" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="850247321893147">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="710197737219195" type="yellow">
+                            <param id="0" name="Object">pallete</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="986456745516069">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="426064159057317" type="yellow">
+                                    <param id="0" name="Object">Sprite22</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="535012654827686" type="Sprite22">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="156111637727366">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="986453094358891" type="yellow">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="X co-ordinate">yellow.posx</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="225212840875875" type="yellow">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="Y co-ordinate">yellow.posy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="112830031549472" type="yellow">
+                            <param id="0" name="X">lerp(yellow.X, yellow.posx, 0.1)</param>
+                            <param id="1" name="Y">lerp(yellow.Y, yellow.posy, 0.1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="923535189095366">
+            <conditions>
+                <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="383174969583742" type="blue" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="866118493575516">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="280608527501063" type="blue">
+                            <param id="0" name="Object">pallete</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="252740356939570">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="256815612013030" type="blue">
+                                    <param id="0" name="Object">Sprite26</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="502142462995321" type="blue">
+                                    <param id="0" name="Object">Sprite24</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="975398710631439" type="blue">
+                                    <param id="0" name="Object">Sprite25</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="945705319224973" type="blue">
+                                    <param id="0" name="Object">Sprite23</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="605249000639792" type="blue">
+                                    <param id="0" name="Object">Sprite22</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="783511879176637" type="Sprite26">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="444846016708721">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="207767442035151" type="blue">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="X co-ordinate">blue.posx</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="795826497303004" type="blue">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="Y co-ordinate">blue.posy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="872344333678532" type="blue">
+                            <param id="0" name="X">lerp(blue.X, blue.posx, 0.1)</param>
+                            <param id="1" name="Y">lerp(blue.Y, blue.posy, 0.1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="740799850068657">
+            <conditions>
+                <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="219725121735467" type="green" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="324819442840574">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="265842825915147" type="green">
+                            <param id="0" name="Object">pallete</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="351291213187336">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="702180520846027" type="green">
+                                    <param id="0" name="Object">Sprite24</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="982557344574063" type="Sprite24">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="934582794905611">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="662270996010771" type="green">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="X co-ordinate">green.posx</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="671875131391318" type="green">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="Y co-ordinate">green.posy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="899121205358883" type="green">
+                            <param id="0" name="X">lerp(green.X, green.posx, 0.1)</param>
+                            <param id="1" name="Y">lerp(green.Y, green.posy, 0.1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="758775734994493">
+            <conditions>
+                <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="792557123065883" type="green" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="701475479528822">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="515504674732846" type="green">
+                            <param id="0" name="Object">pallete</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="657214240658852">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="330517698405528" type="green">
+                                    <param id="0" name="Object">Sprite25</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="201666929729176" type="Sprite25">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="685897358136871">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="424712162809638" type="green">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="X co-ordinate">green.posx</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="676395675696987" type="green">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="Y co-ordinate">green.posy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="363199331543678" type="green">
+                            <param id="0" name="X">lerp(green.X, green.posx, 0.1)</param>
+                            <param id="1" name="Y">lerp(green.Y, green.posy, 0.1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="427984530147021">
+            <conditions>
+                <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="225535137425376" type="brown" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="368164254953934">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="860939050830419" type="brown">
+                            <param id="0" name="Object">pallete</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="224767544827249">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="460957497432672" type="brown">
+                                    <param id="0" name="Object">Sprite23</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="523191579193451" type="Sprite23">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="413376576808933">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="467146277267890" type="brown">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="X co-ordinate">brown.posx</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="192402003303009" type="brown">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="Y co-ordinate">brown.posy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="269310290277147" type="brown">
+                            <param id="0" name="X">lerp(brown.X, brown.posx, 0.1)</param>
+                            <param id="1" name="Y">lerp(brown.Y, brown.posy, 0.1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="322922251648107">
+            <conditions>
+                <condition id="0" name="On function" sid="893225812845985" type="Function">
+                    <param id="0" name="Name">&quot;setPositionVariables&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="302456033634817">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="110472492064904" type="yellow">
+                            <param id="0" name="Instance variable">posx</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="871790895007601" type="yellow">
+                            <param id="0" name="Instance variable">posx</param>
+                            <param id="1" name="Value">yellow.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="500090714955043" type="yellow">
+                            <param id="0" name="Instance variable">posy</param>
+                            <param id="1" name="Value">yellow.Y</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="987225868655336" type="blue">
+                            <param id="0" name="Instance variable">posx</param>
+                            <param id="1" name="Value">blue.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="912517063917239" type="blue">
+                            <param id="0" name="Instance variable">posy</param>
+                            <param id="1" name="Value">blue.Y</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="384372777208914" type="brown">
+                            <param id="0" name="Instance variable">posx</param>
+                            <param id="1" name="Value">brown.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="683966948370350" type="brown">
+                            <param id="0" name="Instance variable">posy</param>
+                            <param id="1" name="Value">brown.Y</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="216480096622401" type="green">
+                            <param id="0" name="Instance variable">posx</param>
+                            <param id="1" name="Value">green.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="286808711853272" type="green">
+                            <param id="0" name="Instance variable">posy</param>
+                            <param id="1" name="Value">green.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="669502600359611">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="386546346133533" type="Sprite22" />
+                <condition id="-9" name="Is visible" sid="398093809978561" type="Sprite24" />
+                <condition id="-9" name="Is visible" sid="630859436433041" type="Sprite23" />
+                <condition id="-9" name="Is visible" sid="309212224748225" type="Sprite25" />
+                <condition id="-9" name="Is visible" sid="475493149446436" type="Sprite26" />
+                <condition id="-4" name="Trigger once while true" sid="620935669024175" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="190945093701110" type="System">
+                    <param id="0" name="Seconds">1.7</param>
+                </action>
+                <action id="0" name="Call function" sid="532133046759732" type="Function">
+                    <param id="0" name="Name">&quot;lv_complete&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="346608924971739">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="863310760439466" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">TiledBackground</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="354159506987969" type="TiledBackground">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="574395126724201" type="System">
+                    <param id="0" name="Variable">beenHere</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="768533249068543" type="System">
+                    <param id="0" name="Layout">Map 5</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
