@@ -10,16 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Map 2</layout>
-        <layout order="5">Map 4</layout>
-        <layout order="8">lv 5</layout>
-        <event-sheet order="1">Map 2</event-sheet>
-        <event-sheet order="2">lv 3</event-sheet>
-        <event-sheet order="3">lv 2</event-sheet>
-        <event-sheet order="4">moveNfn</event-sheet>
-        <event-sheet active="1" order="6">Map 4</event-sheet>
-        <event-sheet order="7">Map 1</event-sheet>
-        <event-sheet order="9">lv 5</event-sheet>
+        <layout order="0">Main Menu</layout>
+        <event-sheet active="1" order="1">Main Menu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -45,14 +37,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/lv 4/mobil/" />
         <folder expanded="0" path="object-folder/lv 4/Rambu/" />
         <folder expanded="0" path="object-folder/Start Menu/" />
-        <folder expanded="0" path="object-folder/lv 5/" />
+        <folder expanded="1" path="object-folder/lv 5/" />
         <folder expanded="0" path="object-folder/Map(4)/" />
         <folder expanded="0" path="object-folder/lv 6/" />
         <folder expanded="0" path="object-folder/Map(5)/" />
         <folder expanded="0" path="object-folder/Map(6)/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="0" path="layout-folder/maps/" />
-        <folder expanded="0" path="layout-folder/menus/" />
+        <folder expanded="1" path="layout-folder/maps/" />
+        <folder expanded="1" path="layout-folder/menus/" />
         <folder expanded="1" path="layout-folder/levels/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="event-folder/maps/" />

@@ -33,10 +33,6 @@
                 </action>
                 <action id="-9" name="Destroy" sid="265638346196063" type="Conversation_bg" />
                 <action id="-9" name="Destroy" sid="226751073478673" type="Conversation" />
-                <action id="0" name="Call function" sid="111756415466087" type="Function">
-                    <param id="0" name="Name">&quot;lv_complete&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="483557302699361">
@@ -335,11 +331,11 @@
                         <condition id="1" name="Is overlapping another object" sid="932152534462879" type="Sprite12">
                             <param id="0" name="Object">Sprite11</param>
                         </condition>
-                        <condition id="1" name="Is overlapping another object" sid="403563315618579" type="Sprite15">
-                            <param id="0" name="Object">Sprite14</param>
-                        </condition>
                         <condition id="1" name="Is overlapping another object" sid="421568234264494" type="stop2">
                             <param id="0" name="Object">stop_1</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="403563315618579" type="Sprite15">
+                            <param id="0" name="Object">Sprite14</param>
                         </condition>
                         <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="940827681762288" type="stop2" />
                         <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="917129484410681" type="Sprite15" />
