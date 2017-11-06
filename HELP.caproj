@@ -583,6 +583,14 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="ovr" sid="933319566184715">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="785635412622950" speed="5">
+                        <frame duration="1" hotspotX="0.500965" hotspotY="0.286245" original-source="D:\Jeff_v2\COMP SCI\MM-HCI\rsources\overwrite_button.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Map(2)">
             <object-type name="bg2" sid="882749550075619">
@@ -1940,6 +1948,22 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="174302009163794" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mm" sid="528287077448558">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="385158348880414" speed="5">
+                    <frame duration="1" hotspotX="0.500965" hotspotY="1.32342" original-source="D:\Jeff_v2\COMP SCI\MM-HCI\rsources\main_menu.png">
+                        <collision-poly>
+                            <point x="0.023166" y="0.133829" />
+                            <point x="0.5" y="0.00371747" />
+                            <point x="0.977799" y="0.133829" />
+                            <point x="0.583012" y="0.992565" />
+                            <point x="0.417954" y="0.992565" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

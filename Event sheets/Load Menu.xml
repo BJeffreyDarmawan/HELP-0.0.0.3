@@ -211,7 +211,7 @@
                     <param id="0" name="Variable">user</param>
                     <param id="1" name="Value">&quot;3&quot;</param>
                 </action>
-                <action id="1" name="Get item" sid="142165971065043" type="LocalStorage">
+                <action disabled="1" id="1" name="Get item" sid="142165971065043" type="LocalStorage">
                     <param id="0" name="Key">&quot;stage3&quot;</param>
                 </action>
             </actions>
@@ -274,6 +274,12 @@
                 <condition id="-2" name="On start of layout" sid="890099305472516" type="System" />
             </conditions>
             <actions>
+                <action id="-3" name="Create object" sid="935509490467747" type="System">
+                    <param id="0" name="Object to create">TiledBackground</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
                 <action id="0" name="Set cursor style" sid="896709249551685" type="Mouse">
                     <param id="0" name="Cursor style">0</param>
                 </action>
@@ -472,7 +478,10 @@
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">TiledBackground</param>
                 </condition>
-                <condition id="-9" name="Is visible" sid="573958130352748" type="TiledBackground" />
+                <condition id="-10" name="Compare opacity" sid="573958130352748" type="TiledBackground">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="181295494237416" type="System">

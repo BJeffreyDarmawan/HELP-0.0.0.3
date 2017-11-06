@@ -96,5 +96,89 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="760092241946372">
+            <conditions>
+                <condition id="0" name="On function" sid="108366165846953" type="Function">
+                    <param id="0" name="Name">&quot;chooseOVW&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="692577267874015" type="System">
+                    <param id="0" name="Object to create">TiledBackground</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="529977405891197" type="TiledBackground">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-3" name="Create object" sid="658297757255312" type="System">
+                    <param id="0" name="Object to create">Text</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">408</param>
+                    <param id="3" name="Y">100</param>
+                </action>
+                <action id="-3" name="Create object" sid="399413917584815" type="System">
+                    <param id="0" name="Object to create">mm</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">100</param>
+                    <param id="3" name="Y">115</param>
+                </action>
+                <action id="0" name="Set text" sid="492961373008276" type="Text">
+                    <param id="0" name="Text">&quot;The save slots are full. Do you want to overwrite existing progress?&quot;</param>
+                </action>
+                <action id="-3" name="Create object" sid="607474771554607" type="System">
+                    <param id="0" name="Object to create">nameBut1</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">408</param>
+                    <param id="3" name="Y">170</param>
+                </action>
+                <action id="-3" name="Create object" sid="577094504793056" type="System">
+                    <param id="0" name="Object to create">nameBut2</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">408</param>
+                    <param id="3" name="Y">250</param>
+                </action>
+                <action id="-3" name="Create object" sid="879992171496291" type="System">
+                    <param id="0" name="Object to create">nameBut3</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">408</param>
+                    <param id="3" name="Y">330</param>
+                </action>
+                <action id="-3" name="Create object" sid="673205599013918" type="System">
+                    <param id="0" name="Object to create">ovr</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">408</param>
+                    <param id="3" name="Y">390</param>
+                </action>
+                <action id="-3" name="Create object" sid="670150801582475" type="System">
+                    <param id="0" name="Object to create">slot1</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">263</param>
+                    <param id="3" name="Y">147</param>
+                </action>
+                <action id="-3" name="Create object" sid="695274974239324" type="System">
+                    <param id="0" name="Object to create">slot2</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">263</param>
+                    <param id="3" name="Y">227</param>
+                </action>
+                <action id="-3" name="Create object" sid="201036344122187" type="System">
+                    <param id="0" name="Object to create">slot3</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">263</param>
+                    <param id="3" name="Y">307</param>
+                </action>
+                <action id="1" name="Get item" sid="476626188363250" type="LocalStorage">
+                    <param id="0" name="Key">&quot;user1&quot;</param>
+                </action>
+                <action id="1" name="Get item" sid="163749444534976" type="LocalStorage">
+                    <param id="0" name="Key">&quot;user2&quot;</param>
+                </action>
+                <action id="1" name="Get item" sid="596960947037462" type="LocalStorage">
+                    <param id="0" name="Key">&quot;user3&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
