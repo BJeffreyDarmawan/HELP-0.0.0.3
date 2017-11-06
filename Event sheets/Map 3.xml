@@ -32,6 +32,10 @@
                             <param id="0" name="Variable">story</param>
                             <param id="1" name="Value">9</param>
                         </action>
+                        <action id="0" name="Call function" sid="310782895167429" type="Function">
+                            <param id="0" name="Name">&quot;saveGame&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
                         <action behavior="ScrollTo" id="1" name="Set enabled" sid="168472600523606" type="char">
                             <param id="0" name="State">1</param>
                         </action>
@@ -43,7 +47,7 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action behavior="Bullet" id="3" name="Set angle of motion" sid="226527661368902" type="ncess">
-                            <param id="0" name="Angle">0</param>
+                            <param id="0" name="Angle">90</param>
                         </action>
                         <action behavior="Bullet" id="5" name="Set enabled" sid="446593873955283" type="ncess">
                             <param id="0" name="State">1</param>
@@ -55,6 +59,9 @@
                         <action id="0" name="Call function" sid="224092169051536" type="Function">
                             <param id="0" name="Name">&quot;importAJAX&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Set text" sid="713771933541297" type="Speaker">
+                            <param id="0" name="Text">name</param>
                         </action>
                         <action id="-16" name="Wait" sid="237257180848065" type="System">
                             <param id="0" name="Seconds">2</param>
@@ -92,6 +99,9 @@
                         <action id="0" name="Call function" sid="916137517417239" type="Function">
                             <param id="0" name="Name">&quot;createMSGDialog&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Set text" sid="532423010737082" type="Speaker">
+                            <param id="0" name="Text">name</param>
                         </action>
                         <action disabled="1" id="0" name="Call function" sid="632885907769984" type="Function">
                             <param id="0" name="Name">&quot;importAJAX&quot;</param>
@@ -250,6 +260,70 @@
                 <action id="-2" name="Go to layout" sid="320371335534542" type="System">
                     <param id="0" name="Layout">Map 4</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="885774463987215">
+            <conditions>
+                <condition id="0" name="On function" sid="611499642898920" type="Function">
+                    <param id="0" name="Name">&quot;setSpeaker&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="818089748030583">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="451523786725630" type="System">
+                            <param id="0" name="Variable">story</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="327373715758584" type="Speaker">
+                            <param id="0" name="Text">name</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="103871925181595">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="202448943625571" type="System">
+                            <param id="0" name="Variable">story</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="725585251476936" type="Speaker">
+                            <param id="0" name="Text">name</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="563963691774925">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="540897759556988" type="System">
+                            <param id="0" name="Variable">story</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="938746290230102" type="Speaker">
+                            <param id="0" name="Text">name</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="265052136971464">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="728204139490485" type="System">
+                    <param id="0" name="First value">ncess.Y</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">520</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="527637614676970" type="ncess" />
             </actions>
         </event-block>
     </events>

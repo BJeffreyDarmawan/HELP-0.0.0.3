@@ -371,6 +371,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="yum" uid="1014">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>143.505233765</x>
+                        <y>304.556213379</y>
+                        <z>0</z>
+                        <width>117.191246033</width>
+                        <height>69.407913208</height>
+                        <depth>0</depth>
+                        <hotspotX>0.354166657</hotspotX>
+                        <hotspotY>1.180904508</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>

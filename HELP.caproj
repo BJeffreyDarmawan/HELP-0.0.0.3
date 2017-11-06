@@ -28,6 +28,7 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -42,14 +43,14 @@
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
     <first-layout>Main Menu</first-layout>
-    <use-loader-layout>0</use-loader-layout>
+    <use-loader-layout>1</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
         <prop name="Downscaling">Medium quality</prop>
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Scale inner</prop>
         <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Loader style">Progress bar only</prop>
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
@@ -922,6 +923,21 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="yum" sid="488296554431617">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="357272378028237" speed="5">
+                        <frame duration="1" hotspotX="0.354167" hotspotY="1.1809" original-source="C:\Users\Lenovo\Desktop\masukan ini\YUMM.png">
+                            <collision-poly>
+                                <point x="0.354167" y="0.0753769" />
+                                <point x="1" y="0.0804023" />
+                                <point x="1" y="0.904523" />
+                                <point x="0.139881" y="0.919598" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="lv 3">
             <object-type name="bush" sid="308579760470661">
@@ -1412,14 +1428,15 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="335689913126141" speed="5">
                         <frame duration="1" hotspotX="0.500705" hotspotY="0.429603" original-source="C:\Users\Wilson Fransicius\Desktop\bahana_FP\DRIVE\Map(4)-Lvl5\pohon1.png">
                             <collision-poly>
-                                <point x="0.248237" y="0.00361011" />
-                                <point x="0.500705" y="0.0914561" />
-                                <point x="0.717913" y="0.0336943" />
-                                <point x="0.794076" y="0.4284" />
-                                <point x="0.550071" y="0.681107" />
-                                <point x="0.500705" y="0.998797" />
-                                <point x="0.404795" y="0.720818" />
-                                <point x="0.0521862" y="0.4284" />
+                                <point x="0" y="0" />
+                                <point x="0.844852" y="0.0192539" />
+                                <point x="1" y="0.279182" />
+                                <point x="1" y="0.784598" />
+                                <point x="0.566996" y="0.719615" />
+                                <point x="0.630465" y="1" />
+                                <point x="0.286318" y="1" />
+                                <point x="0.382934" y="0.711793" />
+                                <point x="0" y="0.625753" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1431,10 +1448,11 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="591114193705613" speed="5">
                         <frame duration="1" hotspotX="0.525394" hotspotY="1.66426" original-source="C:\Users\Wilson Fransicius\Desktop\bahana_FP\DRIVE\Map(4)-Lvl5\bush.png">
                             <collision-poly>
-                                <point x="0.0998249" y="0.155235" />
+                                <point x="0.00175135" y="0.169675" />
                                 <point x="0.525394" y="0.0180505" />
-                                <point x="0.926445" y="0.205776" />
-                                <point x="0.525394" y="0.916968" />
+                                <point x="0.947461" y="0.205776" />
+                                <point x="1" y="0.942238" />
+                                <point x="0" y="0.971119" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1446,10 +1464,12 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="592469935812585" speed="5">
                         <frame duration="1" hotspotX="0.50625" hotspotY="1.67458" original-source="C:\Users\Wilson Fransicius\Desktop\bahana_FP\DRIVE\Map(4)-Lvl5\awan1.png">
                             <collision-poly>
-                                <point x="0.090625" y="0.179661" />
+                                <point x="0" y="0.627119" />
+                                <point x="0.0609376" y="0.0101695" />
                                 <point x="0.50625" y="0.00338986" />
-                                <point x="0.839063" y="0.359322" />
-                                <point x="0.50625" y="0.945763" />
+                                <point x="1" y="0.386441" />
+                                <point x="1" y="1" />
+                                <point x="0.29375" y="0.959322" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1467,8 +1487,8 @@
                                 <point x="0.989583" y="0.497696" />
                                 <point x="0.90625" y="0.834101" />
                                 <point x="0.5" y="0.917051" />
-                                <point x="0.0807292" y="0.857143" />
-                                <point x="0.0572917" y="0.497696" />
+                                <point x="0.0338542" y="0.894009" />
+                                <point x="0.0104167" y="0.359447" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1484,9 +1504,9 @@
                                 <point x="0.5" y="0.0810235" />
                                 <point x="0.84788" y="0.260128" />
                                 <point x="0.998753" y="0.498934" />
-                                <point x="0.839152" y="0.724947" />
+                                <point x="0.973816" y="1" />
                                 <point x="0.5" y="0.993603" />
-                                <point x="0.0822943" y="0.859275" />
+                                <point x="0" y="1" />
                                 <point x="0.0910224" y="0.498934" />
                             </collision-poly>
                         </frame>
@@ -1495,6 +1515,11 @@
             </object-type>
             <object-type name="kitten" sid="877798609263593">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="567643139604756">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="372570058341881" speed="5">
                         <frame duration="1" hotspotX="0.44391" hotspotY="0.562645" original-source="D:\Jeff_v2\COMP SCI\MM-HCI\rsources\cat.png">
@@ -1595,6 +1620,27 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="peternak" sid="422700296097330">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="341300677854532">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="301035667569833" speed="5">
+                        <frame duration="1" hotspotX="0.501247" hotspotY="0.498641" original-source="C:\Users\Lenovo\Desktop\masukan ini\peternak-goblok.png">
+                            <collision-poly>
+                                <point x="0.670823" y="0.596468" />
+                                <point x="0.802993" y="0.733696" />
+                                <point x="0.887781" y="1" />
+                                <point x="0.0698254" y="0.994565" />
+                                <point x="0.159601" y="0.672554" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="lv 6">
             <object-type name="Sprite17" sid="114008782273808">
@@ -1615,76 +1661,184 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Sprite18" sid="248170212077178">
+            <object-type name="horse" sid="248170212077178">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="714930600552707" speed="5">
                         <frame duration="1" hotspotX="0.475765" hotspotY="0.294274" original-source="C:\Users\Wilson Fransicius\Desktop\bahana_FP\DRIVE\horse.png">
                             <collision-poly>
-                                <point x="0.475765" y="0.0532624" />
-                                <point x="0.489796" y="0.0466045" />
-                                <point x="0.702806" y="0.292943" />
-                                <point x="0.862245" y="0.929427" />
+                                <point x="0.210459" y="0" />
+                                <point x="0.571429" y="0.00932088" />
+                                <point x="1" y="0.372836" />
+                                <point x="1" y="0.902796" />
                                 <point x="0.475765" y="0.985353" />
-                                <point x="0.34949" y="0.65779" />
+                                <point x="0" y="0.551266" />
                                 <point x="0.059949" y="0.292943" />
                             </collision-poly>
                         </frame>
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Sprite19" sid="565399712257212">
+            <object-type name="chicken" sid="565399712257212">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="405259227495449" speed="5">
                         <frame duration="1" hotspotX="0.476852" hotspotY="0.492537" original-source="C:\Users\Wilson Fransicius\Desktop\no5_ill_chicken1.png">
                             <collision-poly>
                                 <point x="0.106481" y="0.19403" />
-                                <point x="0.476852" y="0.343284" />
-                                <point x="0.888889" y="0.160448" />
-                                <point x="0.902778" y="0.492537" />
+                                <point x="0.277778" y="0" />
+                                <point x="1" y="0.179105" />
+                                <point x="1" y="0.455224" />
                                 <point x="0.787037" y="0.742537" />
                                 <point x="0.476852" y="0.996269" />
-                                <point x="0.152778" y="0.753731" />
+                                <point x="0.0462966" y="0.675372" />
                                 <point x="0.0416667" y="0.492537" />
                             </collision-poly>
                         </frame>
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Sprite20" sid="109600833072806">
+            <object-type name="goat" sid="109600833072806">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="913444534352895" speed="5">
                         <frame duration="1" hotspotX="0.507724" hotspotY="0.508264" original-source="C:\Users\Wilson Fransicius\Desktop\Goat_cartoon_04.svg.png">
                             <collision-poly>
                                 <point x="0.200824" y="0.206612" />
-                                <point x="0.506694" y="0.0526859" />
+                                <point x="0.646756" y="0" />
                                 <point x="0.61792" y="0.402893" />
-                                <point x="0.952626" y="0.508264" />
-                                <point x="0.869207" y="0.865702" />
-                                <point x="0.506694" y="0.985537" />
+                                <point x="1" y="0.231405" />
+                                <point x="0.902163" y="0.987603" />
+                                <point x="0.354274" y="0.987603" />
                                 <point x="0.355304" y="0.654959" />
-                                <point x="0.323378" y="0.508264" />
+                                <point x="0" y="0.330578" />
                             </collision-poly>
                         </frame>
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Sprite21" sid="388208313622834">
+            <object-type name="cow" sid="388208313622834">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="264119369047195" speed="5">
                         <frame duration="1" hotspotX="0.505618" hotspotY="0.491429" original-source="C:\Users\Wilson Fransicius\Desktop\Gallery-for-cartoonws-clip-art-clipartcow.png">
                             <collision-poly>
-                                <point x="0.157303" y="0.257143" />
+                                <point x="0.173354" y="0.0800002" />
                                 <point x="0.505618" y="0.02" />
-                                <point x="0.871589" y="0.225714" />
-                                <point x="0.955056" y="0.488571" />
-                                <point x="0.871589" y="0.754286" />
-                                <point x="0.505618" y="0.842857" />
-                                <point x="0.150883" y="0.734286" />
-                                <point x="0.139647" y="0.488571" />
+                                <point x="0.829856" y="0.0428569" />
+                                <point x="1" y="0.597143" />
+                                <point x="0.784912" y="0.971429" />
+                                <point x="0.428571" y="0.985714" />
+                                <point x="0.0802569" y="0.751429" />
+                                <point x="0" y="0.282857" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="q_mark1" sid="633920474698160">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="posx" sid="120909271244330" type="number" />
+                    <instance-variable name="posy" sid="720740521168150" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="340114466724786">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="726669737142251" speed="5">
+                        <frame duration="1" hotspotX="0.459677" hotspotY="0.477778" original-source="D:\Jeff_v2\COMP SCI\MM-HCI\rsources\q_mark.png">
+                            <collision-poly>
+                                <point x="0" y="0.172222" />
+                                <point x="0.459677" y="0.0111111" />
+                                <point x="1" y="0.0611111" />
+                                <point x="0.943548" y="0.444444" />
+                                <point x="0.790322" y="0.944445" />
+                                <point x="0.459677" y="0.994444" />
+                                <point x="0.225806" y="0.905556" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="q_mark2" sid="221634472450006">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="posx" sid="770535883338686" type="number" />
+                    <instance-variable name="posy" sid="576618429295918" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="272655269268318">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="709294362238807" speed="5">
+                        <frame duration="1" hotspotX="0.459677" hotspotY="0.477778" original-source="D:\Jeff_v2\COMP SCI\MM-HCI\rsources\q_mark.png">
+                            <collision-poly>
+                                <point x="0" y="0.172222" />
+                                <point x="0.459677" y="0.0111111" />
+                                <point x="1" y="0.0611111" />
+                                <point x="0.943548" y="0.444444" />
+                                <point x="0.790322" y="0.944445" />
+                                <point x="0.459677" y="0.994444" />
+                                <point x="0.225806" y="0.905556" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="q_mark3" sid="412910077820225">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="posx" sid="413567218681642" type="number" />
+                    <instance-variable name="posy" sid="377118410512313" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="627534030784823">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="284144832983745" speed="5">
+                        <frame duration="1" hotspotX="0.459677" hotspotY="0.477778" original-source="D:\Jeff_v2\COMP SCI\MM-HCI\rsources\q_mark.png">
+                            <collision-poly>
+                                <point x="0" y="0.172222" />
+                                <point x="0.459677" y="0.0111111" />
+                                <point x="1" y="0.0611111" />
+                                <point x="0.943548" y="0.444444" />
+                                <point x="0.790322" y="0.944445" />
+                                <point x="0.459677" y="0.994444" />
+                                <point x="0.225806" y="0.905556" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="q_mark4" sid="427640780632454">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="posx" sid="493302879948273" type="number" />
+                    <instance-variable name="posy" sid="813988627487415" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="581829153247880">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="455197292793138" speed="5">
+                        <frame duration="1" hotspotX="0.459677" hotspotY="0.477778" original-source="D:\Jeff_v2\COMP SCI\MM-HCI\rsources\q_mark.png">
+                            <collision-poly>
+                                <point x="0" y="0.172222" />
+                                <point x="0.459677" y="0.0111111" />
+                                <point x="1" y="0.0611111" />
+                                <point x="0.943548" y="0.444444" />
+                                <point x="0.790322" y="0.944445" />
+                                <point x="0.459677" y="0.994444" />
+                                <point x="0.225806" y="0.905556" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1724,7 +1878,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="938143989777284" speed="5">
-                        <frame duration="1" hotspotX="0.500103" hotspotY="0.606103" original-source="C:\Users\Wilson Fransicius\Desktop\bahana_FP\DRIVE\Map(5)-Lvl7\bg_nc.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.606695" original-source="C:\Users\Lenovo\Desktop\Map(5)-Lvl7\bg_nc.png">
                             <collision-poly>
                                 <point x="0.102495" y="0.206195" />
                                 <point x="0.499897" y="0.848359" />
@@ -1744,14 +1898,14 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="986382615428453" speed="5">
                         <frame duration="1" hotspotX="0.517241" hotspotY="0.856148" original-source="C:\Users\Wilson Fransicius\Desktop\bahana_FP\DRIVE\Map(5)-Lvl7\matahari.png">
                             <collision-poly>
-                                <point x="0.232184" y="0.283063" />
-                                <point x="0.514943" y="0.116009" />
-                                <point x="0.855172" y="0.227378" />
-                                <point x="0.864368" y="0.856148" />
-                                <point x="0.296552" y="0.921114" />
-                                <point x="0.514943" y="0.865429" />
-                                <point x="0.818391" y="0.837587" />
-                                <point x="0.28046" y="0.856148" />
+                                <point x="0.0298853" y="0.259861" />
+                                <point x="0.34023" y="0.00928047" />
+                                <point x="0.777011" y="0.0278421" />
+                                <point x="0.995402" y="0.364268" />
+                                <point x="1" y="0.76334" />
+                                <point x="0.602299" y="0.99536" />
+                                <point x="0.252874" y="0.99536" />
+                                <point x="0.00919563" y="0.554523" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1763,14 +1917,14 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="237294755683783" speed="5">
                         <frame duration="1" hotspotX="0.496198" hotspotY="0.853535" original-source="C:\Users\Wilson Fransicius\Desktop\bahana_FP\DRIVE\Map(5)-Lvl7\pohon1.png">
                             <collision-poly>
-                                <point x="0.212928" y="0.166667" />
+                                <point x="0.0684413" y="0.121212" />
                                 <point x="0.494297" y="0.00757576" />
-                                <point x="0.844106" y="0.0782828" />
-                                <point x="0.882129" y="0.853535" />
-                                <point x="0.355513" y="0.979798" />
-                                <point x="0.494297" y="0.74495" />
-                                <point x="0.673004" y="0.929293" />
-                                <point x="0.140684" y="0.853535" />
+                                <point x="0.859315" y="0.0631313" />
+                                <point x="1" y="0.50505" />
+                                <point x="0.846007" y="0.979798" />
+                                <point x="0.509506" y="0.949495" />
+                                <point x="0.205323" y="0.969697" />
+                                <point x="0" y="0.550505" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1780,15 +1934,12 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="168767791304796" speed="5">
-                        <frame duration="1" hotspotX="0.500103" hotspotY="0.500184" original-source="C:\Users\Wilson Fransicius\Desktop\bahana_FP\DRIVE\Map(5)-Lvl7\bg.png">
+                        <frame duration="1" hotspotX="0.500103" hotspotY="0.500184" original-source="C:\Users\Lenovo\Desktop\Map(5)-Lvl7\sky.png">
                             <collision-poly>
-                                <point x="0.168488" y="0.300037" />
-                                <point x="0.499897" y="0.00257069" />
-                                <point x="0.805321" y="0.346676" />
-                                <point x="0.999794" y="0.499816" />
+                                <point x="1" y="0" />
                                 <point x="0.999794" y="0.999633" />
                                 <point x="0.000206228" y="0.999633" />
-                                <point x="0.000206228" y="0.499816" />
+                                <point x="0" y="0" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1800,12 +1951,13 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="747103069992934" speed="5">
                         <frame duration="1" hotspotX="0.491304" hotspotY="0.272331" original-source="C:\Users\Wilson Fransicius\Desktop\bahana_FP\DRIVE\Map(5)-Lvl7\pohon2.png">
                             <collision-poly>
-                                <point x="0.643478" y="0.08061" />
-                                <point x="0.486957" y="0.0697168" />
-                                <point x="0.478261" y="0.0087146" />
+                                <point x="0.226087" y="0.0196078" />
+                                <point x="0.478261" y="0" />
+                                <point x="0.86087" y="0.0087146" />
                                 <point x="0.778261" y="0.272331" />
                                 <point x="0.795652" y="0.694989" />
-                                <point x="0.486957" y="0.995643" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
                                 <point x="0.243478" y="0.664488" />
                                 <point x="0.304348" y="0.272331" />
                             </collision-poly>
@@ -1819,9 +1971,11 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220678374491293" speed="5">
                         <frame duration="1" hotspotX="0.500103" hotspotY="-0.295909" original-source="C:\Users\Wilson Fransicius\Desktop\bahana_FP\DRIVE\Map(5)-Lvl7\tanah.png">
                             <collision-poly>
-                                <point x="0.38111" y="0.16746" />
+                                <point x="0" y="0.121789" />
+                                <point x="0.440504" y="0.185537" />
                                 <point x="0.499897" y="0.203615" />
                                 <point x="0.633533" y="0.0999049" />
+                                <point x="1" y="0" />
                                 <point x="0.999794" y="0.999049" />
                                 <point x="0.000206228" y="0.999049" />
                             </collision-poly>
@@ -1898,7 +2052,19 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder name="lv 8" />
+        <object-folder name="lv 8">
+            <object-type name="bg_troll" sid="598399861001598">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="205825602705037" speed="5">
+                        <frame duration="1" hotspotX="0.500103" hotspotY="0.500184" original-source="C:\Users\Lenovo\Desktop\masukan ini\bg-troll.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="eqs" sid="762784241817438">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
         <object-folder name="lv 9">
             <object-type name="Sprite28" sid="724055079711496">
                 <plugin id="Sprite" />
@@ -2186,7 +2352,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite27" sid="780367347275310">
+        <object-type name="troll" sid="780367347275310">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="914576903865341" speed="5">
@@ -2208,6 +2374,33 @@
         <object-type name="pallete" sid="954240949448078">
             <plugin id="TiledBg" />
             <texture original-source="D:\Jeff_v2\COMP SCI\MM-HCI\rsources\black_bg.png" />
+        </object-type>
+        <object-type name="selected_bt" sid="964704832746449">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="316524063690892" speed="5">
+                    <frame duration="1" hotspotX="0.501493" hotspotY="0.5" original-source="D:\Jeff_v2\COMP SCI\MM-HCI\rsources\selected-button.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.498507" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.498507" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="help_bt" sid="384652629757497">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="363194348179582" speed="5">
+                    <frame duration="1" hotspotX="0.510638" hotspotY="1.89695" original-source="C:\Users\Lenovo\Desktop\masukan ini\buttonHelp.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>
@@ -2256,6 +2449,8 @@
             <event-sheet>Map 2.xml</event-sheet>
             <event-sheet>Map 3.xml</event-sheet>
             <event-sheet>Map 4.xml</event-sheet>
+            <event-sheet>Map 5.xml</event-sheet>
+            <event-sheet>Map 6.xml</event-sheet>
         </event-folder>
         <event-folder name="levels">
             <event-sheet>lv 1.xml</event-sheet>
@@ -2266,6 +2461,7 @@
             <event-sheet>lv 6.xml</event-sheet>
             <event-sheet>lv 9.xml</event-sheet>
             <event-sheet>lv 7.xml</event-sheet>
+            <event-sheet>lv 8.xml</event-sheet>
         </event-folder>
         <event-folder name="menus">
             <event-sheet>Load Menu.xml</event-sheet>
@@ -2298,16 +2494,22 @@
         <global-instance type="AJAX" uid="224" />
     </global-instances>
     <sounds-folder>
-        <file name="Monkeys Monkeying Around-SoundBible.com-1738007729.ogg" />
-        <file name="Frog Croaking-SoundBible.com-1053984354.ogg" />
-        <file name="hawk_screeching-Mike_Koenig-1626170357.ogg" />
-        <file name="Kitten Meow-SoundBible.com-1295572573.ogg" />
-        <file name="Lion Roar-SoundBible.com-718441804.ogg" />
+        <file name="Monkeys.ogg" />
+        <file name="Frog Croaking.ogg" />
+        <file name="Hawk Screech.ogg" />
+        <file name="Kitten Meow.ogg" />
+        <file name="Lion Roar.ogg" />
+        <file name="Cow Moo.ogg" />
+        <file name="Goat.ogg" />
+        <file name="Horse Neigh.ogg" />
+        <file name="Rooster.ogg" />
+        <file name="troll suara.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="bgm.ogg" />
         <file name="glovebox_open.ogg" />
         <file name="toolur_dettpp.ogg" />
+        <file name="twinkletwinkle_cut.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

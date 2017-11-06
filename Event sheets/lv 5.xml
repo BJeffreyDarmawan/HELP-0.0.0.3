@@ -56,152 +56,173 @@
                     </actions>
                 </event-block>
                 <comment>tiap click play sound lagi</comment>
-                <event-block sid="785670171164856">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="889768948925546" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">awan_elang</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="500988152551451" type="System">
-                            <param id="0" name="Variable">MOUSECLICK</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                        <condition id="4" inverted="1" name="Is any playing" sid="296606323475047" type="Audio" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="420194201856096" type="Audio">
-                            <param id="0" name="Audio file">hawk_screeching-Mike_Koenig-1626170357</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;eagle&quot;</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="947120900455722" type="System">
-                            <param id="0" name="Seconds">1.7</param>
-                        </action>
-                        <action id="6" name="Stop" sid="921463583964704" type="Audio">
-                            <param id="0" name="Tag">&quot;eagle&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="500328824537174">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="416921578959421" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">grass_lion</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="927024682779046" type="System">
-                            <param id="0" name="Variable">MOUSECLICK</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                        <condition id="4" inverted="1" name="Is any playing" sid="802454413151435" type="Audio" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="957051548012774" type="Audio">
-                            <param id="0" name="Audio file">Lion Roar-SoundBible.com-718441804</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;lion&quot;</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="409142808112208" type="System">
-                            <param id="0" name="Seconds">2</param>
-                        </action>
-                        <action id="6" name="Stop" sid="378240461806394" type="Audio">
-                            <param id="0" name="Tag">&quot;lion&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="316536244295581">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="333474351380333" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">pohon_monyet</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="593471717027637" type="System">
-                            <param id="0" name="Variable">MOUSECLICK</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                        <condition id="4" inverted="1" name="Is any playing" sid="107453581493638" type="Audio" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="275736279622282" type="Audio">
-                            <param id="0" name="Audio file">Monkeys Monkeying Around-SoundBible.com-1738007729</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;monkey&quot;</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="277503465072405" type="System">
-                            <param id="0" name="Seconds">2</param>
-                        </action>
-                        <action id="6" name="Stop" sid="779457319374655" type="Audio">
-                            <param id="0" name="Tag">&quot;monkey&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="838926040734172">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="741485263583474" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">pond_frog</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="987458632053054" type="System">
-                            <param id="0" name="Variable">MOUSECLICK</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                        <condition id="4" inverted="1" name="Is any playing" sid="221627780205126" type="Audio" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="277058355749072" type="Audio">
-                            <param id="0" name="Audio file">Frog Croaking-SoundBible.com-1053984354</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;frog&quot;</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="511441436384885" type="System">
-                            <param id="0" name="Seconds">2</param>
-                        </action>
-                        <action id="6" name="Stop" sid="807314326359051" type="Audio">
-                            <param id="0" name="Tag">&quot;frog&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <comment>play sound dlu</comment>
-                <event-block sid="884999709104166">
+                <event-block sid="611128822355490">
                     <conditions>
-                        <condition id="6" name="On object clicked" sid="651223887644534" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">rumput_kucing</param>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="240714239041573" type="Audio">
+                            <param id="0" name="Tag">&quot;monkey&quot;</param>
                         </condition>
-                        <condition id="-14" name="Compare variable" sid="434974392245160" type="System">
-                            <param id="0" name="Variable">MOUSECLICK</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="394295081322818" type="Audio">
+                            <param id="0" name="Tag">&quot;eagle&quot;</param>
                         </condition>
-                        <condition id="4" inverted="1" name="Is any playing" sid="894991827350319" type="Audio" />
+                        <condition id="5" inverted="1" name="Is tag playing" sid="697249854853509" type="Audio">
+                            <param id="0" name="Tag">&quot;lion&quot;</param>
+                        </condition>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="606621688104289" type="Audio">
+                            <param id="0" name="Tag">&quot;frog&quot;</param>
+                        </condition>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="764380724292974" type="Audio">
+                            <param id="0" name="Tag">&quot;kitten&quot;</param>
+                        </condition>
                     </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="258327484316859" type="Audio">
-                            <param id="0" name="Audio file">Kitten Meow-SoundBible.com-1295572573</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;kitten&quot;</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="726335647500827" type="System">
-                            <param id="0" name="Seconds">1.5</param>
-                        </action>
-                        <action id="0" name="Call function" sid="784430291140991" type="Function">
-                            <param id="0" name="Name">&quot;lv_complete&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="785670171164856">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="889768948925546" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">awan_elang</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="500988152551451" type="System">
+                                    <param id="0" name="Variable">MOUSECLICK</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="420194201856096" type="Audio">
+                                    <param id="0" name="Audio file">Hawk Screech</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;eagle&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="947120900455722" type="System">
+                                    <param id="0" name="Seconds">1.7</param>
+                                </action>
+                                <action id="6" name="Stop" sid="921463583964704" type="Audio">
+                                    <param id="0" name="Tag">&quot;eagle&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="500328824537174">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="416921578959421" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">grass_lion</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="927024682779046" type="System">
+                                    <param id="0" name="Variable">MOUSECLICK</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="957051548012774" type="Audio">
+                                    <param id="0" name="Audio file">Lion Roar</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;lion&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="409142808112208" type="System">
+                                    <param id="0" name="Seconds">2</param>
+                                </action>
+                                <action id="6" name="Stop" sid="378240461806394" type="Audio">
+                                    <param id="0" name="Tag">&quot;lion&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="316536244295581">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="333474351380333" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">pohon_monyet</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="593471717027637" type="System">
+                                    <param id="0" name="Variable">MOUSECLICK</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="275736279622282" type="Audio">
+                                    <param id="0" name="Audio file">Monkeys</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;monkey&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="277503465072405" type="System">
+                                    <param id="0" name="Seconds">2</param>
+                                </action>
+                                <action id="6" name="Stop" sid="779457319374655" type="Audio">
+                                    <param id="0" name="Tag">&quot;monkey&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="838926040734172">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="741485263583474" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">pond_frog</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="987458632053054" type="System">
+                                    <param id="0" name="Variable">MOUSECLICK</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="277058355749072" type="Audio">
+                                    <param id="0" name="Audio file">Frog Croaking</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;frog&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="511441436384885" type="System">
+                                    <param id="0" name="Seconds">2</param>
+                                </action>
+                                <action id="6" name="Stop" sid="807314326359051" type="Audio">
+                                    <param id="0" name="Tag">&quot;frog&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="884999709104166">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="651223887644534" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">rumput_kucing</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="434974392245160" type="System">
+                                    <param id="0" name="Variable">MOUSECLICK</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="258327484316859" type="Audio">
+                                    <param id="0" name="Audio file">Kitten Meow</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;kitten&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="392813949385578" type="kitten">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="522262222599372" type="kitten" />
+                                <action id="-16" name="Wait" sid="726335647500827" type="System">
+                                    <param id="0" name="Seconds">1.3</param>
+                                </action>
+                                <action id="0" name="Call function" sid="784430291140991" type="Function">
+                                    <param id="0" name="Name">&quot;lv_complete&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="181103148277229">
                     <conditions>
@@ -221,7 +242,151 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-2" name="Go to layout" sid="839101663558262" type="System">
-                            <param id="0" name="Layout">Map 2</param>
+                            <param id="0" name="Layout">Map 4</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="621506540126218" title="hover">
+            <sub-events>
+                <event-block sid="540273966745266">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="731769078500789" type="Mouse">
+                            <param id="0" name="Object">pohon_monyet</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="300492374152538" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="121933921873464" type="pohon_monyet">
+                            <param id="0" name="Width">236.585+10</param>
+                            <param id="1" name="Height">277.295+10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="745793353409458">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="723793478701375" type="Mouse">
+                            <param id="0" name="Object">pohon_monyet</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="674994111492576" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="301211219082257" type="pohon_monyet">
+                            <param id="0" name="Width">236.585</param>
+                            <param id="1" name="Height">277.295</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="817679067305715">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="295975142200334" type="Mouse">
+                            <param id="0" name="Object">awan_elang</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="307639418405824" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="442437673835397" type="awan_elang">
+                            <param id="0" name="Width">248.339+10</param>
+                            <param id="1" name="Height">114.469+10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="696634505046045">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="195007397160993" type="Mouse">
+                            <param id="0" name="Object">awan_elang</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="568289279146884" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="338328325395436" type="awan_elang">
+                            <param id="0" name="Width">248.339</param>
+                            <param id="1" name="Height">114.469</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="378867673925323">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="167595694826527" type="Mouse">
+                            <param id="0" name="Object">grass_lion</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="200308909209542" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="394954389976760" type="grass_lion">
+                            <param id="0" name="Width">226.395+10</param>
+                            <param id="1" name="Height">132.393+10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="867678949554496">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="647033560631800" type="Mouse">
+                            <param id="0" name="Object">grass_lion</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="882766974286638" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="296829567720302" type="grass_lion">
+                            <param id="0" name="Width">226.395</param>
+                            <param id="1" name="Height">132.393</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="232929280769422">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="505954328252776" type="Mouse">
+                            <param id="0" name="Object">rumput_kucing</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="945608858375827" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="863594583926693" type="rumput_kucing">
+                            <param id="0" name="Width">229.181+10</param>
+                            <param id="1" name="Height">111.179+10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="350711846695994">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="727498217027556" type="Mouse">
+                            <param id="0" name="Object">rumput_kucing</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="307621276313154" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="366507122037648" type="rumput_kucing">
+                            <param id="0" name="Width">229.181</param>
+                            <param id="1" name="Height">111.179</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="710623068321579">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="246064927385745" type="Mouse">
+                            <param id="0" name="Object">pond_frog</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="599266601615015" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="642427117947355" type="pond_frog">
+                            <param id="0" name="Width">324.915+10</param>
+                            <param id="1" name="Height">183.611+10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="744349665207526">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="274470175122274" type="Mouse">
+                            <param id="0" name="Object">pond_frog</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="747010303678243" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="807865671975850" type="pond_frog">
+                            <param id="0" name="Width">324.915</param>
+                            <param id="1" name="Height">183.611</param>
                         </action>
                     </actions>
                 </event-block>

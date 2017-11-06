@@ -39,11 +39,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>434.679290771</x>
-                        <y>248.318527222</y>
+                        <x>431.182342529</x>
+                        <y>240.269332886</y>
                         <z>0</z>
-                        <width>854.53112793</width>
-                        <height>475.801300049</height>
+                        <width>861.535766602</width>
+                        <height>479.701477051</height>
                         <depth>0</depth>
                         <hotspotX>0.500103116</hotspotX>
                         <hotspotY>0.500183642</hotspotY>
@@ -54,7 +54,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Layer 1" sid="937287113618800">
+        <layer name="animals" sid="937287113618800">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -70,7 +70,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite18" uid="889">
+                <instance type="horse" uid="889">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -80,11 +80,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>685</x>
-                        <y>240</y>
+                        <x>635</x>
+                        <y>222</y>
                         <z>0</z>
-                        <width>199.717086792</width>
-                        <height>191.310623169</height>
+                        <width>117.690338135</width>
+                        <height>112.736534119</height>
                         <depth>0</depth>
                         <hotspotX>0.475765318</hotspotX>
                         <hotspotY>0.2942743</hotspotY>
@@ -92,7 +92,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite19" uid="890">
+                <instance type="chicken" uid="890">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -102,11 +102,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>593</x>
-                        <y>382</y>
+                        <x>539</x>
+                        <y>342</y>
                         <z>0</z>
-                        <width>113.117553711</width>
-                        <height>140.349563599</height>
+                        <width>74.735359192</width>
+                        <height>92.727203369</height>
                         <depth>0</depth>
                         <hotspotX>0.476851851</hotspotX>
                         <hotspotY>0.49253732</hotspotY>
@@ -114,7 +114,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite20" uid="891">
+                <instance type="goat" uid="891">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -124,11 +124,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>341</x>
-                        <y>376</y>
+                        <x>648</x>
+                        <y>410</y>
                         <z>0</z>
-                        <width>179.525970459</width>
-                        <height>178.971313477</height>
+                        <width>118.114784241</width>
+                        <height>117.749862671</height>
                         <depth>0</depth>
                         <hotspotX>0.507723987</hotspotX>
                         <hotspotY>0.508264482</hotspotY>
@@ -136,7 +136,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite21" uid="892">
+                <instance type="cow" uid="892">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -146,14 +146,235 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>406</x>
-                        <y>286</y>
+                        <x>756</x>
+                        <y>324</y>
                         <z>0</z>
-                        <width>282.96282959</width>
-                        <height>158.967880249</height>
+                        <width>182.166244507</width>
+                        <height>102.340583801</height>
                         <depth>0</depth>
                         <hotspotX>0.505617976</hotspotX>
                         <hotspotY>0.491428584</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="q_marks" sid="840480416827961">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="q_mark1" uid="1017">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="DragDrop">
+                            <properties>
+                                <axes>Both</axes>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>406</x>
+                        <y>324</y>
+                        <z>0</z>
+                        <width>71.57699585</width>
+                        <height>103.90209198</height>
+                        <depth>0</depth>
+                        <hotspotX>0.459677428</hotspotX>
+                        <hotspotY>0.477777779</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="q_mark2" uid="1018">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="DragDrop">
+                            <properties>
+                                <axes>Both</axes>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>310</x>
+                        <y>302</y>
+                        <z>0</z>
+                        <width>71.57699585</width>
+                        <height>103.90209198</height>
+                        <depth>0</depth>
+                        <hotspotX>0.459677428</hotspotX>
+                        <hotspotY>0.477777779</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="q_mark3" uid="1019">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="DragDrop">
+                            <properties>
+                                <axes>Both</axes>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>350</x>
+                        <y>419</y>
+                        <z>0</z>
+                        <width>71.57699585</width>
+                        <height>103.90209198</height>
+                        <depth>0</depth>
+                        <hotspotX>0.459677011</hotspotX>
+                        <hotspotY>0.477777988</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="q_mark4" uid="1020">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="DragDrop">
+                            <properties>
+                                <axes>Both</axes>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>243</x>
+                        <y>376</y>
+                        <z>0</z>
+                        <width>71.57699585</width>
+                        <height>103.90209198</height>
+                        <depth>0</depth>
+                        <hotspotX>0.459677011</hotspotX>
+                        <hotspotY>0.477777988</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="conv" sid="318894933578533">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Conversation_bg" uid="1021">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>17</x>
+                        <y>13</y>
+                        <z>0</z>
+                        <width>819</width>
+                        <height>120</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Conversation" uid="1022">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>37</x>
+                        <y>34</y>
+                        <z>0</z>
+                        <width>636.005981445</width>
+                        <height>61.142822266</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

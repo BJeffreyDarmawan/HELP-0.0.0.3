@@ -41,6 +41,43 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="779572063116180">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="508195415747036" type="yum">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="606290563589515" type="Function">
+                    <param id="0" name="Name">&quot;fadeOutYum&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="939489712909714">
+            <conditions>
+                <condition id="0" name="On function" sid="892796544147781" type="Function">
+                    <param id="0" name="Name">&quot;fadeOutYum&quot;</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="385049072677560" type="yum">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Opacity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="178744467773360" type="yum">
+                    <param id="0" name="Opacity">yum.Opacity-5</param>
+                </action>
+                <action id="-16" name="Wait" sid="345126724477302" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Call function" sid="792377996715135" type="Function">
+                    <param id="0" name="Name">&quot;fadeOutYum&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="543646654490639">
             <conditions>
                 <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="150251308531936" type="broc" />
@@ -149,6 +186,9 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="770736208712496" type="baconaja" />
+                        <action id="-16" name="Set opacity" sid="371124064162651" type="yum">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -185,6 +225,9 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="443714621029215" type="leg" />
+                        <action id="-16" name="Set opacity" sid="746375689556203" type="yum">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -221,6 +264,9 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="764842866562470" type="meat" />
+                        <action id="-16" name="Set opacity" sid="429416280653898" type="yum">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -257,6 +303,9 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="193960574454330" type="sausage" />
+                        <action id="-16" name="Set opacity" sid="111290972096203" type="yum">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -293,6 +342,9 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="863162291247932" type="steak" />
+                        <action id="-16" name="Set opacity" sid="535374128117809" type="yum">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>

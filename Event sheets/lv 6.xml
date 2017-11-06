@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>lv 6</name>
     <events>
+        <include>lv complete</include>
         <event-block sid="267049038574876">
             <conditions>
                 <condition id="6" name="On object clicked" sid="720163868496187" type="Mouse">
@@ -21,7 +22,483 @@
                     <param id="1" name="Value">2</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="274394582439491" type="System">
-                    <param id="0" name="Layout">Map 2</param>
+                    <param id="0" name="Layout">Map 4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="941938795215676" title="q_mark">
+            <sub-events>
+                <variable constant="0" name="MOUSECLICK2" sid="276832706775985" static="1" type="number">0</variable>
+                <event-block sid="275655739760009">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="100597938593471" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="824981837242686" type="Function">
+                            <param id="0" name="Name">&quot;setPositionVariables&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="851672780659766" type="Conversation_bg">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="140696642766750" type="Conversation">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="810050499226003" type="Conversation">
+                            <param id="0" name="Text">&quot;Click the question mark and hear the animal sound&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="368668297555589" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="954433543550661" type="Conversation">
+                            <param id="0" name="Text">&quot;Drag each question mark to the animal accordingly.&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="763397443211140" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="119929077020344" type="Conversation_bg" />
+                        <action id="-9" name="Destroy" sid="529275595157941" type="Conversation" />
+                        <action id="-10" name="Add to" sid="659669214073042" type="System">
+                            <param id="0" name="Variable">MOUSECLICK2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="562306815719287">
+                    <conditions>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="621586115568684" type="Audio">
+                            <param id="0" name="Tag">&quot;goat&quot;</param>
+                        </condition>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="478923619891774" type="Audio">
+                            <param id="0" name="Tag">&quot;chicken&quot;</param>
+                        </condition>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="403068754689680" type="Audio">
+                            <param id="0" name="Tag">&quot;cow&quot;</param>
+                        </condition>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="514930759715727" type="Audio">
+                            <param id="0" name="Tag">&quot;horse&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="300611671546278" type="System">
+                            <param id="0" name="Variable">MOUSECLICK2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="694431868689448">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="435849159317291" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">q_mark1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="608101019026665" type="Audio">
+                                    <param id="0" name="Audio file">Goat</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;goat&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="416007692414596" type="System">
+                                    <param id="0" name="Seconds">1.3</param>
+                                </action>
+                                <action id="6" name="Stop" sid="413957759913593" type="Audio">
+                                    <param id="0" name="Tag">&quot;goat&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="301886764854208">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="279847315127436" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">q_mark2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="185778767273978" type="Audio">
+                                    <param id="0" name="Audio file">Rooster</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;chicken&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="548656630360704" type="System">
+                                    <param id="0" name="Seconds">1.8</param>
+                                </action>
+                                <action id="6" name="Stop" sid="472778506492814" type="Audio">
+                                    <param id="0" name="Tag">&quot;chicken&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="923238669352376">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="927948991872227" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">q_mark3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="196258360592740" type="Audio">
+                                    <param id="0" name="Audio file">Cow Moo</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;cow&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="498378360753650" type="System">
+                                    <param id="0" name="Seconds">1.8</param>
+                                </action>
+                                <action id="6" name="Stop" sid="776580487426070" type="Audio">
+                                    <param id="0" name="Tag">&quot;cow&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="993736721185302">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="658930023427486" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">q_mark4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="670547599567852" type="Audio">
+                                    <param id="0" name="Audio file">Horse Neigh</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;horse&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="153752327758017" type="System">
+                                    <param id="0" name="Seconds">1.3</param>
+                                </action>
+                                <action id="6" name="Stop" sid="558212719121471" type="Audio">
+                                    <param id="0" name="Tag">&quot;horse&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="603535178342657">
+                    <conditions>
+                        <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="488472381233737" type="q_mark1" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="117731394430194">
+                            <conditions>
+                                <condition behavior="DragDrop" id="2" name="On drop" sid="825033882268253" type="q_mark1" />
+                                <condition id="1" name="Is overlapping another object" sid="533823097406580" type="q_mark1">
+                                    <param id="0" name="Object">goat</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="724237459625849" type="q_mark1" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="596759889540005">
+                            <conditions>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="339513615219399" type="q_mark1">
+                                    <param id="0" name="Object">goat</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="204423829521101">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="232715540869994" type="q_mark1">
+                                            <param id="0" name="Comparison">1</param>
+                                            <param id="1" name="X co-ordinate">q_mark1.posx</param>
+                                        </condition>
+                                        <condition id="-2" name="Compare Y" sid="153909545613130" type="q_mark1">
+                                            <param id="0" name="Comparison">1</param>
+                                            <param id="1" name="Y co-ordinate">q_mark1.posy</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="825132766793581" type="q_mark1">
+                                            <param id="0" name="X">lerp(q_mark1.X, q_mark1.posx, 0.1)</param>
+                                            <param id="1" name="Y">lerp(q_mark1.Y, q_mark1.posy, 0.1)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="796265206351284">
+                    <conditions>
+                        <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="706003606231860" type="q_mark2" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="733967902582762">
+                            <conditions>
+                                <condition behavior="DragDrop" id="2" name="On drop" sid="575943193663979" type="q_mark2" />
+                                <condition id="1" name="Is overlapping another object" sid="886063883177070" type="q_mark2">
+                                    <param id="0" name="Object">chicken</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="217812232871064" type="q_mark2" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="917463218833171">
+                            <conditions>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="114001769633098" type="q_mark2">
+                                    <param id="0" name="Object">chicken</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="663745073678909">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="278549510726955" type="q_mark2">
+                                            <param id="0" name="Comparison">1</param>
+                                            <param id="1" name="X co-ordinate">q_mark2.posx</param>
+                                        </condition>
+                                        <condition id="-2" name="Compare Y" sid="375892026636502" type="q_mark2">
+                                            <param id="0" name="Comparison">1</param>
+                                            <param id="1" name="Y co-ordinate">q_mark2.posy</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="894300978402897" type="q_mark2">
+                                            <param id="0" name="X">lerp(q_mark2.X, q_mark2.posx, 0.1)</param>
+                                            <param id="1" name="Y">lerp(q_mark2.Y, q_mark2.posy, 0.1)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="617851336271736">
+                    <conditions>
+                        <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="156521915555532" type="q_mark3" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="327046396301411">
+                            <conditions>
+                                <condition behavior="DragDrop" id="2" name="On drop" sid="711976734522774" type="q_mark3" />
+                                <condition id="1" name="Is overlapping another object" sid="132162725734934" type="q_mark3">
+                                    <param id="0" name="Object">cow</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="927143383526518" type="q_mark3" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="937698050585010">
+                            <conditions>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="671616323131087" type="q_mark3">
+                                    <param id="0" name="Object">cow</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="308721874403179">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="270397794494923" type="q_mark3">
+                                            <param id="0" name="Comparison">1</param>
+                                            <param id="1" name="X co-ordinate">q_mark3.posx</param>
+                                        </condition>
+                                        <condition id="-2" name="Compare Y" sid="141448169295948" type="q_mark3">
+                                            <param id="0" name="Comparison">1</param>
+                                            <param id="1" name="Y co-ordinate">q_mark3.posy</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="859909019109704" type="q_mark3">
+                                            <param id="0" name="X">lerp(q_mark3.X, q_mark3.posx, 0.1)</param>
+                                            <param id="1" name="Y">lerp(q_mark3.Y, q_mark3.posy, 0.1)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="176039838902800">
+                    <conditions>
+                        <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="850368804388377" type="q_mark4" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="624454287758745">
+                            <conditions>
+                                <condition behavior="DragDrop" id="2" name="On drop" sid="443434711923817" type="q_mark4" />
+                                <condition id="1" name="Is overlapping another object" sid="550341734003352" type="q_mark4">
+                                    <param id="0" name="Object">horse</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="930673078389473" type="q_mark4" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="507004757057086">
+                            <conditions>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="612861054749736" type="q_mark4">
+                                    <param id="0" name="Object">horse</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="549865668633774">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="861975655338334" type="q_mark4">
+                                            <param id="0" name="Comparison">1</param>
+                                            <param id="1" name="X co-ordinate">q_mark4.posx</param>
+                                        </condition>
+                                        <condition id="-2" name="Compare Y" sid="218638841430814" type="q_mark4">
+                                            <param id="0" name="Comparison">1</param>
+                                            <param id="1" name="Y co-ordinate">q_mark4.posy</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="948443026017831" type="q_mark4">
+                                            <param id="0" name="X">lerp(q_mark4.X, q_mark4.posx, 0.1)</param>
+                                            <param id="1" name="Y">lerp(q_mark4.Y, q_mark4.posy, 0.1)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="214210600391337">
+                                    <conditions>
+                                        <condition id="0" name="On function" sid="849788510185061" type="Function">
+                                            <param id="0" name="Name">&quot;setPositionVariables&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="107182490084243">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="864957641621939" type="stop2">
+                                                    <param id="0" name="Instance variable">posx</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="750010967784441" type="stop2">
+                                                    <param id="0" name="Instance variable">posx</param>
+                                                    <param id="1" name="Value">stop2.X</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="192878991117896" type="stop2">
+                                                    <param id="0" name="Instance variable">posy</param>
+                                                    <param id="1" name="Value">stop2.Y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="799753083594344" type="Sprite15">
+                                                    <param id="0" name="Instance variable">posx</param>
+                                                    <param id="1" name="Value">Sprite15.X</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="607143410464482" type="Sprite15">
+                                                    <param id="0" name="Instance variable">posy</param>
+                                                    <param id="1" name="Value">Sprite15.Y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="807021392811561" type="Sprite12">
+                                                    <param id="0" name="Instance variable">posx</param>
+                                                    <param id="1" name="Value">Sprite12.X</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="975016327742605" type="Sprite12">
+                                                    <param id="0" name="Instance variable">posy</param>
+                                                    <param id="1" name="Value">Sprite12.Y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="399749662858457" type="wheel_dragThis_buletItemGone_thisgone_CARGO">
+                                                    <param id="0" name="Instance variable">posx</param>
+                                                    <param id="1" name="Value">wheel_dragThis_buletItemGone_thisgone_CARGO.X</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="974759495620208" type="wheel_dragThis_buletItemGone_thisgone_CARGO">
+                                                    <param id="0" name="Instance variable">posy</param>
+                                                    <param id="1" name="Value">wheel_dragThis_buletItemGone_thisgone_CARGO.Y</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="826822355405138">
+            <conditions>
+                <condition id="0" name="On function" sid="243002101083922" type="Function">
+                    <param id="0" name="Name">&quot;setPositionVariables&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="746899889083148">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="625312235838001" type="q_mark1">
+                            <param id="0" name="Instance variable">posx</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="163182354545996" type="q_mark1">
+                            <param id="0" name="Instance variable">posx</param>
+                            <param id="1" name="Value">q_mark1.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="910161782673304" type="q_mark1">
+                            <param id="0" name="Instance variable">posy</param>
+                            <param id="1" name="Value">q_mark1.Y</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="934324443022979" type="q_mark2">
+                            <param id="0" name="Instance variable">posx</param>
+                            <param id="1" name="Value">q_mark2.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="442584010664073" type="q_mark2">
+                            <param id="0" name="Instance variable">posy</param>
+                            <param id="1" name="Value">q_mark2.Y</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="144209013459964" type="q_mark3">
+                            <param id="0" name="Instance variable">posx</param>
+                            <param id="1" name="Value">q_mark3.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="650976388239109" type="q_mark3">
+                            <param id="0" name="Instance variable">posy</param>
+                            <param id="1" name="Value">q_mark3.Y</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="693921063927234" type="q_mark4">
+                            <param id="0" name="Instance variable">posx</param>
+                            <param id="1" name="Value">q_mark4.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="642003532366662" type="q_mark4">
+                            <param id="0" name="Instance variable">posy</param>
+                            <param id="1" name="Value">q_mark4.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="678410245279311">
+            <conditions>
+                <condition id="-31" inverted="1" name="Object UID exists" sid="239089854153344" type="System">
+                    <param id="0" name="UID">q_mark1.UID</param>
+                </condition>
+                <condition id="-31" inverted="1" name="Object UID exists" sid="780139674131026" type="System">
+                    <param id="0" name="UID">q_mark2.UID</param>
+                </condition>
+                <condition id="-31" inverted="1" name="Object UID exists" sid="717236842611269" type="System">
+                    <param id="0" name="UID">q_mark3.UID</param>
+                </condition>
+                <condition id="-31" inverted="1" name="Object UID exists" sid="630811530398034" type="System">
+                    <param id="0" name="UID">q_mark4.UID</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="690799193483202" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="343089910078687" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="0" name="Call function" sid="352667667395659" type="Function">
+                    <param id="0" name="Name">&quot;lv_complete&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
         </event-block>

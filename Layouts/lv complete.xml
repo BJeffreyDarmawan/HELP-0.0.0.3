@@ -164,6 +164,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="selected_bt" uid="1013">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>417</x>
+                        <y>352</y>
+                        <z>0</z>
+                        <width>335</width>
+                        <height>60</height>
+                        <depth>0</depth>
+                        <hotspotX>0.50149256</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>

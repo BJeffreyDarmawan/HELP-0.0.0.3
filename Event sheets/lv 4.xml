@@ -118,6 +118,7 @@
             <sub-events>
                 <event-block sid="814578820430938">
                     <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="215858121064862" type="stop2" />
                         <condition id="1" name="Is overlapping another object" sid="842748360168457" type="stop2">
                             <param id="0" name="Object">stop_1</param>
                         </condition>
@@ -170,6 +171,7 @@
             <sub-events>
                 <event-block sid="180140381579965">
                     <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="867336771612490" type="Sprite15" />
                         <condition id="1" name="Is overlapping another object" sid="953728389912944" type="Sprite15">
                             <param id="0" name="Object">Sprite14</param>
                         </condition>
@@ -222,6 +224,7 @@
             <sub-events>
                 <event-block sid="943134628974774">
                     <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="944002259549859" type="Sprite12" />
                         <condition id="1" name="Is overlapping another object" sid="995481413584198" type="Sprite12">
                             <param id="0" name="Object">Sprite11</param>
                         </condition>
@@ -274,6 +277,7 @@
             <sub-events>
                 <event-block sid="677936827786840">
                     <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="722590816809452" type="wheel_dragThis_buletItemGone_thisgone_CARGO" />
                         <condition id="1" name="Is overlapping another object" sid="428446019714626" type="wheel_dragThis_buletItemGone_thisgone_CARGO">
                             <param id="0" name="Object">buletitem_SHOWN</param>
                         </condition>
@@ -360,5 +364,133 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-group description="" sid="464099118016503" title="setsize">
+            <sub-events>
+                <event-block sid="309487900985925">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="844150289773834" type="Mouse">
+                            <param id="0" name="Object">Sprite12</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="725594122916717" type="Sprite12">
+                            <param id="0" name="Object">Sprite11</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="346636727120592" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="594605702862943" type="Sprite12">
+                            <param id="0" name="Width">87.904+5</param>
+                            <param id="1" name="Height">45.93+5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="247311686981966">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="692040036680435" type="Mouse">
+                            <param id="0" name="Object">Sprite12</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="751151560834090" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="868808608822965" type="Sprite12">
+                            <param id="0" name="Width">87.904</param>
+                            <param id="1" name="Height">45.93</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="283654622176145">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="914549752760644" type="Mouse">
+                            <param id="0" name="Object">wheel_dragThis_buletItemGone_thisgone_CARGO</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="588399052849841" type="wheel_dragThis_buletItemGone_thisgone_CARGO">
+                            <param id="0" name="Object">buletitem_SHOWN</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="353433197704616" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="334205006983737" type="wheel_dragThis_buletItemGone_thisgone_CARGO">
+                            <param id="0" name="Width">50.159+5</param>
+                            <param id="1" name="Height">50.159+5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="533491710667787">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="216425321599218" type="Mouse">
+                            <param id="0" name="Object">wheel_dragThis_buletItemGone_thisgone_CARGO</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="129322194791461" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="612276983604752" type="wheel_dragThis_buletItemGone_thisgone_CARGO">
+                            <param id="0" name="Width">50.159</param>
+                            <param id="1" name="Height">50.159</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="319552396648401">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="449914510968914" type="Mouse">
+                            <param id="0" name="Object">stop2</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="493455957782743" type="stop2">
+                            <param id="0" name="Object">stop_1</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="174858279396251" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="588870055474387" type="stop2">
+                            <param id="0" name="Width">68.411+5</param>
+                            <param id="1" name="Height">68.411+5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="576619630846613">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="228886721580207" type="Mouse">
+                            <param id="0" name="Object">stop2</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="526951833495605" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="929484879310884" type="stop2">
+                            <param id="0" name="Width">68.411</param>
+                            <param id="1" name="Height">68.411</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="200453105448760">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="170455986417142" type="Mouse">
+                            <param id="0" name="Object">Sprite15</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="665907152249841" type="Sprite15">
+                            <param id="0" name="Object">Sprite14</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="394246168212800" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="524763554288746" type="Sprite15">
+                            <param id="0" name="Width">35.242+5</param>
+                            <param id="1" name="Height">55.586+5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="688330312320751">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="668800056565768" type="Mouse">
+                            <param id="0" name="Object">Sprite15</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="648208877427443" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="921143132159904" type="Sprite15">
+                            <param id="0" name="Width">35.242</param>
+                            <param id="1" name="Height">55.568</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

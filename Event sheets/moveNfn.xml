@@ -338,36 +338,6 @@
                     <param id="0" name="Key">&quot;stage&quot;&amp;user</param>
                     <param id="1" name="Value">story</param>
                 </action>
-                <action id="-15" name="Set visible" sid="566969359128211" type="Conversation">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="0" name="Set text" sid="785152727018673" type="Conversation">
-                    <param id="0" name="Text">&quot;AAAA&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="178700769252181">
-            <conditions>
-                <condition id="0" name="On item set" sid="223154929570381" type="LocalStorage">
-                    <param id="0" name="Key">&quot;stage&quot;&amp;user</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="1" name="Get item" sid="885425643548303" type="LocalStorage">
-                    <param id="0" name="Key">&quot;stage&quot;&amp;user</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="573311366848637">
-            <conditions>
-                <condition id="1" name="On item get" sid="267577488635910" type="LocalStorage">
-                    <param id="0" name="Key">&quot;stage&quot;&amp;user</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="948999668286135" type="Conversation">
-                    <param id="0" name="Text">LocalStorage.ItemValue</param>
-                </action>
             </actions>
         </event-block>
     </events>

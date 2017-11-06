@@ -387,6 +387,12 @@
                             <param id="0" name="Variable">user</param>
                             <param id="1" name="Value">&quot;1&quot;</param>
                         </action>
+                        <action id="-9" name="Destroy" sid="263580442269308" type="selected_bt" />
+                        <action id="0" name="Spawn another object" sid="378612289865685" type="nameBut1">
+                            <param id="0" name="Object">selected_bt</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="647542402404857">
@@ -401,6 +407,12 @@
                         <action id="-9" name="Set value" sid="226656718366706" type="System">
                             <param id="0" name="Variable">user</param>
                             <param id="1" name="Value">&quot;2&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="899809831406701" type="selected_bt" />
+                        <action id="0" name="Spawn another object" sid="442169853586411" type="nameBut2">
+                            <param id="0" name="Object">selected_bt</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="Image point">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -419,6 +431,12 @@
                         </action>
                         <action disabled="1" id="1" name="Get item" sid="348649556196146" type="LocalStorage">
                             <param id="0" name="Key">&quot;stage3&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="152842410421941" type="selected_bt" />
+                        <action id="0" name="Spawn another object" sid="133619010324416" type="nameBut3">
+                            <param id="0" name="Object">selected_bt</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="Image point">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -515,6 +533,9 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-16" name="Wait" sid="554059090756808" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="939738488510603" type="System">
                     <param id="0" name="Layout">Main Menu</param>
                 </action>

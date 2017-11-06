@@ -31,6 +31,7 @@
                     <sub-events>
                         <event-block sid="986456745516069">
                             <conditions>
+                                <condition behavior="DragDrop" id="2" name="On drop" sid="275999569354928" type="yellow" />
                                 <condition id="1" name="Is overlapping another object" sid="426064159057317" type="yellow">
                                     <param id="0" name="Object">Sprite22</param>
                                 </condition>
@@ -139,6 +140,7 @@
                     <sub-events>
                         <event-block sid="351291213187336">
                             <conditions>
+                                <condition behavior="DragDrop" id="2" name="On drop" sid="362617263663770" type="green" />
                                 <condition id="1" name="Is overlapping another object" sid="702180520846027" type="green">
                                     <param id="0" name="Object">Sprite24</param>
                                 </condition>
@@ -187,6 +189,7 @@
                     <sub-events>
                         <event-block sid="657214240658852">
                             <conditions>
+                                <condition behavior="DragDrop" id="2" name="On drop" sid="119845175960491" type="green" />
                                 <condition id="1" name="Is overlapping another object" sid="330517698405528" type="green">
                                     <param id="0" name="Object">Sprite25</param>
                                 </condition>
@@ -235,6 +238,7 @@
                     <sub-events>
                         <event-block sid="224767544827249">
                             <conditions>
+                                <condition behavior="DragDrop" id="2" name="On drop" sid="521666494721516" type="brown" />
                                 <condition id="1" name="Is overlapping another object" sid="460957497432672" type="brown">
                                     <param id="0" name="Object">Sprite23</param>
                                 </condition>
@@ -331,7 +335,7 @@
             </conditions>
             <actions>
                 <action id="-16" name="Wait" sid="190945093701110" type="System">
-                    <param id="0" name="Seconds">1.7</param>
+                    <param id="0" name="Seconds">0.7</param>
                 </action>
                 <action id="0" name="Call function" sid="532133046759732" type="Function">
                     <param id="0" name="Name">&quot;lv_complete&quot;</param>

@@ -63,6 +63,10 @@
                                     <param id="0" name="Variable">story</param>
                                     <param id="1" name="Value">12</param>
                                 </action>
+                                <action id="0" name="Call function" sid="127460673195571" type="Function">
+                                    <param id="0" name="Name">&quot;saveGame&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
                                 <action behavior="ScrollTo" id="1" name="Set enabled" sid="110183756998420" type="char">
                                     <param id="0" name="State">1</param>
                                 </action>
@@ -136,6 +140,47 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="734817913536126">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="362362205828526" type="System">
+                                    <param id="0" name="Variable">beenHere</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="524378891426949" type="ncess" />
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="447427547365365" type="char">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="712126266383572" type="char">
+                                    <param id="0" name="X">peternak.X - 60</param>
+                                    <param id="1" name="Y">peternak.Y</param>
+                                </action>
+                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="844760659945692" type="char">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="112012370724828" type="System">
+                                    <param id="0" name="Variable">conv</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="354641036504547" type="Function">
+                                    <param id="0" name="Name">&quot;createMSGDialog&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action disabled="1" id="0" name="Call function" sid="885202529679823" type="Function">
+                                    <param id="0" name="Name">&quot;importAJAX&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-16" name="Wait" sid="771479688208548" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="0" name="Call function" sid="317439712645069" type="Function">
+                                    <param id="0" name="Name">&quot;story&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
@@ -185,6 +230,24 @@
                             <param id="0" name="State">1</param>
                         </action>
                         <action behavior="8Direction" id="8" name="Set enabled" sid="121235738764632" type="char">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="280479930255392">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="600158763866452" type="System">
+                            <param id="0" name="Variable">story</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">17</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="893026920862873" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="647155060306016" type="char">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="991498458959442" type="char">
                             <param id="0" name="State">1</param>
                         </action>
                     </actions>
@@ -378,6 +441,12 @@
                             <param id="1" name="Comparison">5</param>
                             <param id="2" name="Second value">1350</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="964300213099495" type="System">
+                            <param id="0" name="Variable">story</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">15</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="897055253304577" type="System" />
                     </conditions>
                     <actions>
                         <action id="-10" name="Add to" sid="405200426381981" type="System">
@@ -423,6 +492,109 @@
                     <param id="0" name="Layout">lv 6</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="399759042866141">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="442698728102046" type="System">
+                    <param id="0" name="First value">char.X</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">1640</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="206850672633053" type="System">
+                    <param id="0" name="Variable">story</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">17</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="548475366779258" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="336202507690428" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="956379979655397" type="System">
+                    <param id="0" name="Layout">Map 5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="671315433632022">
+            <conditions>
+                <condition id="0" name="On function" sid="340705294276415" type="Function">
+                    <param id="0" name="Name">&quot;setSpeaker&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="404405958570504">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="786601099226181" type="System">
+                            <param id="0" name="Variable">story</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="625838982383747" type="Speaker">
+                            <param id="0" name="Text">name</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="116982890177634">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="236917123214647" type="System">
+                            <param id="0" name="Variable">story</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="456144471020610" type="Speaker">
+                            <param id="0" name="Text">&quot;Elder Woman&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="647298537696310">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="672634458390659" type="System">
+                            <param id="0" name="Variable">story</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="178543625713703" type="Speaker">
+                            <param id="0" name="Text">&quot;Elder Woman&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="244123566500049">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="735868040356292" type="System">
+                            <param id="0" name="Variable">story</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">15</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="986548028279547" type="Speaker">
+                            <param id="0" name="Text">&quot;Breeder&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="275986075809187">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="955925439838846" type="System">
+                            <param id="0" name="Variable">story</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">16</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="512324285295526" type="Speaker">
+                            <param id="0" name="Text">&quot;Breeder&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

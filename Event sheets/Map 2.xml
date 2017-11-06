@@ -32,6 +32,10 @@
                             <param id="0" name="Variable">story</param>
                             <param id="1" name="Value">4</param>
                         </action>
+                        <action id="0" name="Call function" sid="258482758152974" type="Function">
+                            <param id="0" name="Name">&quot;saveGame&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
                         <action behavior="8Direction" id="8" name="Set enabled" sid="630240525999440" type="char">
                             <param id="0" name="State">0</param>
                         </action>
@@ -117,7 +121,7 @@
                     <actions>
                         <action id="-9" name="Destroy" sid="626871286047838" type="ncess" />
                         <action id="-3" name="Set position" sid="171747166284277" type="char">
-                            <param id="0" name="X">mamaSheep.X-50</param>
+                            <param id="0" name="X">mamaSheep.X-65</param>
                             <param id="1" name="Y">mamaSheep.Y-30</param>
                         </action>
                         <action behavior="ScrollTo" id="1" name="Set enabled" sid="786707946785739" type="char">
@@ -168,6 +172,62 @@
                     <actions>
                         <action id="0" name="Set text" sid="328770716603902" type="Speaker">
                             <param id="0" name="Text">name</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="205205696881630">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="166682553909815" type="System">
+                            <param id="0" name="Variable">story</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="175922844282994" type="Speaker">
+                            <param id="0" name="Text">&quot;Little Wolf&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="258062533340813">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="120513110105332" type="System">
+                            <param id="0" name="Variable">story</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="644136949066178" type="Speaker">
+                            <param id="0" name="Text">&quot;Little Wolf&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="727194129443457">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="210414778689719" type="System">
+                            <param id="0" name="Variable">story</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="875758805577428" type="Speaker">
+                            <param id="0" name="Text">&quot;Mama Sheep&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="293168971511559">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="335913508846121" type="System">
+                            <param id="0" name="Variable">story</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="237943573177586" type="Speaker">
+                            <param id="0" name="Text">&quot;Mama Sheep&quot;</param>
                         </action>
                     </actions>
                 </event-block>
