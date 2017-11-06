@@ -2021,6 +2021,7 @@
             <event-sheet>lv 3.xml</event-sheet>
             <event-sheet>lv 4.xml</event-sheet>
             <event-sheet>lv 5.xml</event-sheet>
+            <event-sheet>lv 6.xml</event-sheet>
         </event-folder>
         <event-folder name="menus">
             <event-sheet>Load Menu.xml</event-sheet>

@@ -10,14 +10,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Main Menu</layout>
-        <layout order="2">StartMenu</layout>
-        <layout order="4">lv complete</layout>
-        <layout order="7">Load Menu</layout>
+        <layout order="0">Main Menu</layout>
+        <layout order="2">Map 4</layout>
+        <layout order="4">lv 6</layout>
         <event-sheet order="1">Main Menu</event-sheet>
-        <event-sheet order="3">StartMenu</event-sheet>
-        <event-sheet order="5">lv complete</event-sheet>
-        <event-sheet order="6">Load Menu</event-sheet>
+        <event-sheet order="3">Map 4</event-sheet>
+        <event-sheet active="1" order="5">lv 6</event-sheet>
+        <event-sheet order="6">lv 3</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -29,12 +28,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="0" name="mainmenuButtons" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/" />
         <folder expanded="0" path="object-folder/Main Menu/" />
         <folder expanded="0" path="object-folder/lv 1/" />
-        <folder expanded="1" path="object-folder/Map(1)/" />
+        <folder expanded="0" path="object-folder/Map(1)/" />
         <folder expanded="0" path="object-folder/Load Menu/" />
-        <folder expanded="1" path="object-folder/lvComplete/" />
+        <folder expanded="0" path="object-folder/lvComplete/" />
         <folder expanded="0" path="object-folder/Map(2)/" />
         <folder expanded="0" path="object-folder/lv 2/" />
         <folder expanded="0" path="object-folder/lv 3/" />
@@ -43,19 +42,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/lv 4/mobil/" />
         <folder expanded="0" path="object-folder/lv 4/Rambu/" />
         <folder expanded="0" path="object-folder/Start Menu/" />
-        <folder expanded="1" path="object-folder/lv 5/" />
+        <folder expanded="0" path="object-folder/lv 5/" />
         <folder expanded="0" path="object-folder/Map(4)/" />
         <folder expanded="0" path="object-folder/lv 6/" />
         <folder expanded="0" path="object-folder/Map(5)/" />
         <folder expanded="0" path="object-folder/Map(6)/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="0" path="layout-folder/maps/" />
-        <folder expanded="1" path="layout-folder/menus/" />
+        <folder expanded="1" path="layout-folder/maps/" />
+        <folder expanded="0" path="layout-folder/menus/" />
         <folder expanded="1" path="layout-folder/levels/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="event-folder/maps/" />
         <folder expanded="1" path="event-folder/levels/" />
-        <folder expanded="1" path="event-folder/menus/" />
+        <folder expanded="0" path="event-folder/menus/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />

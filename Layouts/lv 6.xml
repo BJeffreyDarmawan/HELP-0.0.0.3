@@ -2,7 +2,7 @@
 <c2layout>
     <name>lv 6</name>
     <sid>643879037432548</sid>
-    <event-sheet></event-sheet>
+    <event-sheet>lv 6</event-sheet>
     <size>
         <width>1708</width>
         <height>960</height>
@@ -39,11 +39,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>857.000793457</x>
-                        <y>483.504241943</y>
+                        <x>434.679290771</x>
+                        <y>248.318527222</y>
                         <z>0</z>
-                        <width>1699</width>
-                        <height>946</height>
+                        <width>854.53112793</width>
+                        <height>475.801300049</height>
                         <depth>0</depth>
                         <hotspotX>0.500103116</hotspotX>
                         <hotspotY>0.500183642</hotspotY>
@@ -80,11 +80,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1404</x>
-                        <y>527</y>
+                        <x>685</x>
+                        <y>240</y>
                         <z>0</z>
-                        <width>300.316955566</width>
-                        <height>287.676055908</height>
+                        <width>199.717086792</width>
+                        <height>191.310623169</height>
                         <depth>0</depth>
                         <hotspotX>0.475765318</hotspotX>
                         <hotspotY>0.2942743</hotspotY>

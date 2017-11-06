@@ -110,7 +110,7 @@
                                 </action>
                                 <action id="-3" name="Set position" sid="190426113053245" type="char">
                                     <param id="0" name="X">Granny.X + 50</param>
-                                    <param id="1" name="Y">Granny.Y + 50</param>
+                                    <param id="1" name="Y">Granny.Y</param>
                                 </action>
                                 <action behavior="ScrollTo" id="1" name="Set enabled" sid="172215694906413" type="char">
                                     <param id="0" name="State">1</param>
@@ -171,12 +171,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="619156216144463">
+                <event-block sid="619156216144463">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="392882269635098" type="System">
                             <param id="0" name="Variable">story</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">12</param>
+                            <param id="2" name="Value">15</param>
                         </condition>
                         <condition id="-4" name="Trigger once while true" sid="419403085148551" type="System" />
                     </conditions>
@@ -340,6 +340,11 @@
         </event-block>
         <event-block sid="593932120632576">
             <conditions>
+                <condition id="-14" name="Compare variable" sid="530587226582865" type="System">
+                    <param id="0" name="Variable">beenHere</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
                 <condition id="-14" name="Compare variable" sid="430221591866124" type="System">
                     <param id="0" name="Variable">story</param>
                     <param id="1" name="Comparison">0</param>
@@ -353,6 +358,69 @@
                 </action>
                 <action id="-2" name="Go to layout" sid="958685583075721" type="System">
                     <param id="0" name="Layout">lv 5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="475239755625027">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="339963174559625" type="System">
+                    <param id="0" name="First value">char.Y</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">510</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="603617675204888">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="908158502647670" type="System">
+                            <param id="0" name="First value">char.X</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">1350</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="405200426381981" type="System">
+                            <param id="0" name="Variable">conv</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="496679386427756" type="char">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="8Direction" id="3" name="Set speed" sid="933383105056788" type="char">
+                            <param id="0" name="Speed">0</param>
+                        </action>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="857570824057676" type="char">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="487997010334824" type="Function">
+                            <param id="0" name="Name">&quot;story&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="241991755235342">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="917088302816786" type="System">
+                    <param id="0" name="Variable">beenHere</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="741749252485660" type="System">
+                    <param id="0" name="Variable">story</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">16</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="646333182405168" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="988951056509930" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="672218765862386" type="System">
+                    <param id="0" name="Layout">lv 6</param>
                 </action>
             </actions>
         </event-block>
