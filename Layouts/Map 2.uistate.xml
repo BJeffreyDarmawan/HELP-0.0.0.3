@@ -4,11 +4,11 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>854</position-x>
-        <position-y>480</position-y>
-        <position-z>278.531</position-z>
-        <lookat-x>854</lookat-x>
-        <lookat-y>480</lookat-y>
+        <position-x>1332.51</position-x>
+        <position-y>785.181</position-y>
+        <position-z>91.2691</position-z>
+        <lookat-x>1332.51</lookat-x>
+        <lookat-y>785.181</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>0</snap-to-grid>
@@ -25,12 +25,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <active-layer name="properties2" />
     <layers>
-        <layer locked="0" name="solid" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="solid" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="background" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="path" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="properties1" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="char" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="properties2" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="properties2" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="conv" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>

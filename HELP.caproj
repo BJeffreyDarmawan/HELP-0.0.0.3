@@ -689,6 +689,28 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Sprite18" sid="472015196974862">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="185127865572125">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="773500673768965" speed="5">
+                        <frame duration="1" hotspotX="0.46087" hotspotY="1.14773" original-source="C:\Users\Wilson Fransicius\Desktop\bahana_FP\DRIVE\Map(2)-Lvl3\anak-sapi.png">
+                            <collision-poly>
+                                <point x="0.0347826" y="0.590909" />
+                                <point x="0.46087" y="0.0454545" />
+                                <point x="0.982609" y="0.465909" />
+                                <point x="0.0521739" y="0.613636" />
+                                <point x="0.46087" y="0.852273" />
+                                <point x="0.713044" y="0.818182" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="lv 2">
             <object-type name="baconaja" sid="940802055874351">
@@ -976,6 +998,11 @@
             </object-type>
             <object-type name="anakSheep" sid="400934988219439">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="198116839721540">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="262814809463309" speed="5">
                         <frame duration="1" hotspotX="0.53913" hotspotY="0.454545" original-source="C:\Users\Wilson Fransicius\Desktop\bahana_FP\DRIVE\Map(2)-Lvl3\anak-sapi.png">
@@ -1532,6 +1559,39 @@
                                 <point x="0.44391" y="0.982599" />
                                 <point x="0.30609" y="0.762181" />
                                 <point x="0.056891" y="0.562645" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="elang_2" sid="287638075880086">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="132004479427397" speed="5">
+                        <frame duration="1" hotspotX="0.494657" hotspotY="1.61231" original-source="C:\Users\Wilson Fransicius\Desktop\bahana_FP\DRIVE\Map(4)-Lvl5\awan2.png">
+                            <collision-poly>
+                                <point x="0.0885496" y="0.255385" />
+                                <point x="0.494657" y="0.0953846" />
+                                <point x="0.996947" y="0.0615385" />
+                                <point x="0.494657" y="0.950769" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="monyet" sid="448387310241033">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="638761342213764" speed="5">
+                        <frame duration="1" hotspotX="0.501832" hotspotY="0.499348" original-source="C:\Users\Wilson Fransicius\Desktop\bahana_FP\DRIVE\Map(4)-Lvl5\pohon2.png">
+                            <collision-poly>
+                                <point x="0.249084" y="0.00130378" />
+                                <point x="0.676435" y="0.0847458" />
+                                <point x="0.752137" y="0.498044" />
+                                <point x="0.477411" y="0.70013" />
+                                <point x="0.501832" y="0.707953" />
+                                <point x="0.266178" y="0.977836" />
+                                <point x="0.02442" y="0.498044" />
                             </collision-poly>
                         </frame>
                     </animation>

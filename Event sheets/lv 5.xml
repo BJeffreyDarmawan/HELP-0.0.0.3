@@ -258,9 +258,11 @@
                         <condition id="-4" name="Trigger once while true" sid="300492374152538" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-7" name="Set size" sid="121933921873464" type="pohon_monyet">
-                            <param id="0" name="Width">236.585+10</param>
-                            <param id="1" name="Height">277.295+10</param>
+                        <action id="-15" name="Set visible" sid="187686341950061" type="monyet">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="822063719578433" type="pohon_monyet">
+                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -272,9 +274,11 @@
                         <condition id="-4" name="Trigger once while true" sid="674994111492576" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-7" name="Set size" sid="301211219082257" type="pohon_monyet">
-                            <param id="0" name="Width">236.585</param>
-                            <param id="1" name="Height">277.295</param>
+                        <action id="-15" name="Set visible" sid="911462529024366" type="pohon_monyet">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="613964803214623" type="monyet">
+                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -286,9 +290,11 @@
                         <condition id="-4" name="Trigger once while true" sid="307639418405824" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-7" name="Set size" sid="442437673835397" type="awan_elang">
-                            <param id="0" name="Width">248.339+10</param>
-                            <param id="1" name="Height">114.469+10</param>
+                        <action id="-15" name="Set visible" sid="168683833563401" type="elang_2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="442437673835397" type="awan_elang">
+                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -300,9 +306,11 @@
                         <condition id="-4" name="Trigger once while true" sid="568289279146884" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-7" name="Set size" sid="338328325395436" type="awan_elang">
-                            <param id="0" name="Width">248.339</param>
-                            <param id="1" name="Height">114.469</param>
+                        <action id="-15" name="Set visible" sid="410965497970700" type="elang_2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="777109758002739" type="awan_elang">
+                            <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
                 </event-block>

@@ -200,29 +200,46 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Conversation" uid="962">
+                <instance type="elang_2" uid="1030">
                     <properties>
-                        <text>Text</text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Arial,-16</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>34</x>
-                        <y>30</y>
+                        <x>698</x>
+                        <y>286</y>
                         <z>0</z>
-                        <width>636.005981445</width>
-                        <height>61.142822266</height>
+                        <width>300.528594971</width>
+                        <height>149.117248535</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.494656503</hotspotX>
+                        <hotspotY>1.612307668</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="monyet" uid="1031">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>334</x>
+                        <y>169</y>
+                        <z>0</z>
+                        <width>335</width>
+                        <height>292</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501831532</hotspotX>
+                        <hotspotY>0.499348104</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -275,6 +292,33 @@
                         <depth>0</depth>
                         <hotspotX>0.443910271</hotspotX>
                         <hotspotY>0.562645018</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Conversation" uid="962">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>34</x>
+                        <y>30</y>
+                        <z>0</z>
+                        <width>636.005981445</width>
+                        <height>61.142822266</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

@@ -119,6 +119,9 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-15" name="Set visible" sid="182179554643386" type="Sprite18">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
                         <action id="-9" name="Destroy" sid="626871286047838" type="ncess" />
                         <action id="-3" name="Set position" sid="171747166284277" type="char">
                             <param id="0" name="X">mamaSheep.X-65</param>
