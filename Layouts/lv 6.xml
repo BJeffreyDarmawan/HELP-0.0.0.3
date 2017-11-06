@@ -102,11 +102,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2185</x>
-                        <y>574</y>
+                        <x>593</x>
+                        <y>382</y>
                         <z>0</z>
-                        <width>216</width>
-                        <height>268</height>
+                        <width>113.117553711</width>
+                        <height>140.349563599</height>
                         <depth>0</depth>
                         <hotspotX>0.476851851</hotspotX>
                         <hotspotY>0.49253732</hotspotY>
@@ -124,11 +124,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2594</x>
-                        <y>963</y>
+                        <x>341</x>
+                        <y>376</y>
                         <z>0</z>
-                        <width>540.940856934</width>
-                        <height>539.269592285</height>
+                        <width>179.525970459</width>
+                        <height>178.971313477</height>
                         <depth>0</depth>
                         <hotspotX>0.507723987</hotspotX>
                         <hotspotY>0.508264482</hotspotY>
@@ -146,11 +146,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1401</x>
-                        <y>-420</y>
+                        <x>406</x>
+                        <y>286</y>
                         <z>0</z>
-                        <width>623</width>
-                        <height>350</height>
+                        <width>282.96282959</width>
+                        <height>158.967880249</height>
                         <depth>0</depth>
                         <hotspotX>0.505617976</hotspotX>
                         <hotspotY>0.491428584</hotspotY>

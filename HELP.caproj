@@ -1493,6 +1493,25 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="kitten" sid="877798609263593">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="372570058341881" speed="5">
+                        <frame duration="1" hotspotX="0.44391" hotspotY="0.562645" original-source="D:\Jeff_v2\COMP SCI\MM-HCI\rsources\cat.png">
+                            <collision-poly>
+                                <point x="0.167468" y="0.162413" />
+                                <point x="0.44391" y="0.0556845" />
+                                <point x="0.798878" y="0.0487239" />
+                                <point x="0.764423" y="0.562645" />
+                                <point x="0.636218" y="0.841067" />
+                                <point x="0.44391" y="0.982599" />
+                                <point x="0.30609" y="0.762181" />
+                                <point x="0.056891" y="0.562645" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Map(4)">
             <object-type name="TiledBackground3" sid="242178027148715">
@@ -2053,7 +2072,13 @@
         <global-instance type="LocalStorage" uid="80" />
         <global-instance type="AJAX" uid="224" />
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="Monkeys Monkeying Around-SoundBible.com-1738007729.ogg" />
+        <file name="Frog Croaking-SoundBible.com-1053984354.ogg" />
+        <file name="hawk_screeching-Mike_Koenig-1626170357.ogg" />
+        <file name="Kitten Meow-SoundBible.com-1295572573.ogg" />
+        <file name="Lion Roar-SoundBible.com-718441804.ogg" />
+    </sounds-folder>
     <music-folder>
         <file name="bgm.ogg" />
         <file name="glovebox_open.ogg" />

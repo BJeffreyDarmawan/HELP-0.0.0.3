@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>lv 5</name>
     <events>
+        <include>lv complete</include>
         <event-group description="" sid="522351053419601" title="ALL IN HERE">
             <sub-events>
                 <variable constant="0" name="MOUSECLICK" sid="382484072190096" static="1" type="number">0</variable>
@@ -18,14 +19,14 @@
                         <action id="-15" name="Set visible" sid="511171577632909" type="Conversation">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="-9" name="Set value" sid="356904394127966" type="System">
+                        <action disabled="1" id="-9" name="Set value" sid="356904394127966" type="System">
                             <param id="0" name="Variable">beenHere</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-16" name="Wait" sid="355035581699910" type="System">
+                        <action disabled="1" id="-16" name="Wait" sid="355035581699910" type="System">
                             <param id="0" name="Seconds">1.0</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="302157764678016" type="System">
+                        <action disabled="1" id="-2" name="Go to layout" sid="302157764678016" type="System">
                             <param id="0" name="Layout">Map 4</param>
                         </action>
                         <action id="0" name="Set text" sid="318133649397035" type="Conversation">
@@ -67,8 +68,22 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
+                        <condition id="4" inverted="1" name="Is any playing" sid="296606323475047" type="Audio" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="420194201856096" type="Audio">
+                            <param id="0" name="Audio file">hawk_screeching-Mike_Koenig-1626170357</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;eagle&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="947120900455722" type="System">
+                            <param id="0" name="Seconds">1.7</param>
+                        </action>
+                        <action id="6" name="Stop" sid="921463583964704" type="Audio">
+                            <param id="0" name="Tag">&quot;eagle&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="500328824537174">
                     <conditions>
@@ -82,8 +97,22 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
+                        <condition id="4" inverted="1" name="Is any playing" sid="802454413151435" type="Audio" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="957051548012774" type="Audio">
+                            <param id="0" name="Audio file">Lion Roar-SoundBible.com-718441804</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;lion&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="409142808112208" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="6" name="Stop" sid="378240461806394" type="Audio">
+                            <param id="0" name="Tag">&quot;lion&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="316536244295581">
                     <conditions>
@@ -97,8 +126,22 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
+                        <condition id="4" inverted="1" name="Is any playing" sid="107453581493638" type="Audio" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="275736279622282" type="Audio">
+                            <param id="0" name="Audio file">Monkeys Monkeying Around-SoundBible.com-1738007729</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;monkey&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="277503465072405" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="6" name="Stop" sid="779457319374655" type="Audio">
+                            <param id="0" name="Tag">&quot;monkey&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="838926040734172">
                     <conditions>
@@ -112,8 +155,22 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
+                        <condition id="4" inverted="1" name="Is any playing" sid="221627780205126" type="Audio" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="277058355749072" type="Audio">
+                            <param id="0" name="Audio file">Frog Croaking-SoundBible.com-1053984354</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;frog&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="511441436384885" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="6" name="Stop" sid="807314326359051" type="Audio">
+                            <param id="0" name="Tag">&quot;frog&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <comment>play sound dlu</comment>
                 <event-block sid="884999709104166">
@@ -128,8 +185,15 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
+                        <condition id="4" inverted="1" name="Is any playing" sid="894991827350319" type="Audio" />
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="258327484316859" type="Audio">
+                            <param id="0" name="Audio file">Kitten Meow-SoundBible.com-1295572573</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;kitten&quot;</param>
+                        </action>
                         <action id="-16" name="Wait" sid="726335647500827" type="System">
                             <param id="0" name="Seconds">1.5</param>
                         </action>
