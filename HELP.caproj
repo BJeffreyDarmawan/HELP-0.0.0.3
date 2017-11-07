@@ -1916,6 +1916,25 @@
                 <texture original-source="C:\Users\Wilson Fransicius\Desktop\bahana_FP\DRIVE\Map(3)\road.png" />
                 <tiles />
             </object-type>
+            <object-type name="sprite_warna" sid="967935060556925">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="468614157462449" speed="5">
+                        <frame duration="1" hotspotX="0.530822" hotspotY="0.467456" original-source="C:\Users\Wilson Fransicius\Desktop\bahana_FP\DRIVE\Map(5)\negro.png">
+                            <collision-poly>
+                                <point x="0.0410959" y="0.0739645" />
+                                <point x="0.527397" y="0.00739645" />
+                                <point x="0.969178" y="0.0946746" />
+                                <point x="0.719178" y="0.467456" />
+                                <point x="0.657534" y="0.705621" />
+                                <point x="0.527397" y="0.838757" />
+                                <point x="0.39726" y="0.707101" />
+                                <point x="0.349315" y="0.467456" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Map(6)">
             <object-type name="Tilemap8" sid="116159779249291">

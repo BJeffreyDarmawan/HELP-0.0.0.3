@@ -11,6 +11,18 @@
                 <action id="0" name="Set text" sid="943728155966998" type="Lirik">
                     <param id="0" name="Text">&quot;Twinkle, twinkle, little star&#x0D;&#x0A;How I wonder what you are&#x0D;&#x0A;Up above the world so high&#x0D;&#x0A;Like a diamond in the sky&#x0D;&#x0A;Twinkle, twinkle little star&#x0D;&#x0A;How I wonder what you are&quot;</param>
                 </action>
+                <action id="-16" name="Wait" sid="224077724256934" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="6" name="Stop" sid="446809242856377" type="Audio">
+                    <param id="0" name="Tag">&quot;Music: http://www.bensound.com/royalty-free-music&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="128338292803019" type="Audio">
+                    <param id="0" name="Audio file">twinkletwinkle_cut</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
     </events>

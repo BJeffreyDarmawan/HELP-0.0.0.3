@@ -13,9 +13,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Map 3</layout>
         <layout order="2">Map 4</layout>
         <layout order="3">Map 5</layout>
-        <layout active="1" order="4">lv 5</layout>
+        <layout order="4">lv 5</layout>
+        <layout order="6">lv 7</layout>
+        <layout order="7">lv 8</layout>
+        <layout order="8">lv 9</layout>
         <event-sheet order="1">Map 3</event-sheet>
         <event-sheet order="5">lv 5</event-sheet>
+        <event-sheet order="9">lv 9</event-sheet>
+        <event-sheet active="1" order="10">Main Menu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -44,7 +49,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/lv 5/" />
         <folder expanded="0" path="object-folder/Map(4)/" />
         <folder expanded="0" path="object-folder/lv 6/" />
-        <folder expanded="0" path="object-folder/Map(5)/" />
+        <folder expanded="1" path="object-folder/Map(5)/" />
         <folder expanded="0" path="object-folder/Map(6)/" />
         <folder expanded="0" path="object-folder/lv 7/" />
         <folder expanded="0" path="object-folder/lv 8/" />
@@ -53,13 +58,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="layout-folder/maps/" />
         <folder expanded="1" path="layout-folder/menus/" />
         <folder expanded="1" path="layout-folder/levels/" />
-        <folder expanded="0" path="event-folder/" />
+        <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="event-folder/maps/" />
         <folder expanded="1" path="event-folder/levels/" />
         <folder expanded="0" path="event-folder/menus/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
-        <folder expanded="0" path="music-folder/" />
+        <folder expanded="1" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/exitButton/" />
         <folder expanded="1" path="animation-folder/loadButton/" />
@@ -155,6 +160,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/q_mark2/" />
         <folder expanded="1" path="animation-folder/q_mark3/" />
         <folder expanded="1" path="animation-folder/q_mark4/" />
+        <folder expanded="1" path="animation-folder/sprite_warna/" />
         <folder expanded="1" path="animation-folder/bg_nc/" />
         <folder expanded="1" path="animation-folder/Sprite22/" />
         <folder expanded="1" path="animation-folder/Sprite24/" />
