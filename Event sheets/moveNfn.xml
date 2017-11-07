@@ -112,47 +112,54 @@
                 <condition id="0" name="On function" sid="157689233728479" type="Function">
                     <param id="0" name="Name">&quot;story&quot;</param>
                 </condition>
-                <condition id="-8" inverted="1" name="Compare two values" sid="791039252646641" type="System">
-                    <param id="0" name="First value">xml.StringValue(&quot;/story/conversation[@id=&apos;conv&quot;&amp;conv&amp;&quot;&apos;]/text()&quot;)</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Second value">&quot;000&quot;</param>
-                </condition>
             </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="184428964604702" type="Conversation">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="943001088007305" type="Conversation_bg">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="0" name="Call function" sid="713596996885301" type="Function">
-                    <param id="0" name="Name">&quot;setSpeaker&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
-                </action>
-                <action id="-15" name="Set visible" sid="317940355928127" type="Speaker">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action disabled="1" id="0" name="Set text" sid="797025585618835" type="Conversation">
-                    <param id="0" name="Text">conv</param>
-                </action>
-                <action disabled="1" id="-16" name="Wait" sid="428892909387554" type="System">
-                    <param id="0" name="Seconds">0.3</param>
-                </action>
-                <action id="0" name="Set text" sid="285521477413379" type="Conversation">
-                    <param id="0" name="Text">xml.StringValue(&quot;/story/conversation[@id=&apos;conv&quot;&amp;conv&amp;&quot;&apos;]/text()&quot;)</param>
-                </action>
-                <action id="-16" name="Wait" sid="428291310616249" type="System">
-                    <param id="0" name="Seconds">0.3</param>
-                </action>
-                <action id="-10" name="Add to" sid="874553561497759" type="System">
-                    <param id="0" name="Variable">conv</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action disabled="1" id="0" name="Call function" sid="354016635202498" type="Function">
-                    <param id="0" name="Name">&quot;story&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="308570199078234">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Compare two values" sid="791039252646641" type="System">
+                            <param id="0" name="First value">xml.StringValue(&quot;/story/conversation[@id=&apos;conv&quot;&amp;conv&amp;&quot;&apos;]/text()&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;000&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="184428964604702" type="Conversation">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="943001088007305" type="Conversation_bg">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="713596996885301" type="Function">
+                            <param id="0" name="Name">&quot;setSpeaker&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="317940355928127" type="Speaker">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action disabled="1" id="0" name="Set text" sid="797025585618835" type="Conversation">
+                            <param id="0" name="Text">conv</param>
+                        </action>
+                        <action disabled="1" id="-16" name="Wait" sid="428892909387554" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="0" name="Set text" sid="285521477413379" type="Conversation">
+                            <param id="0" name="Text">xml.StringValue(&quot;/story/conversation[@id=&apos;conv&quot;&amp;conv&amp;&quot;&apos;]/text()&quot;)</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="428291310616249" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="874553561497759" type="System">
+                            <param id="0" name="Variable">conv</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action disabled="1" id="0" name="Call function" sid="354016635202498" type="Function">
+                            <param id="0" name="Name">&quot;story&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="210294151741990">
             <conditions>
@@ -346,6 +353,11 @@
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">Conversation_bg</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="182936777125526" type="System">
+                    <param id="0" name="First value">Conversation.Text</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">xml.StringValue(&quot;/story/conversation[@id=&apos;conv&quot;&amp;conv-1&amp;&quot;&apos;]/text()&quot;)</param>
                 </condition>
             </conditions>
             <actions>

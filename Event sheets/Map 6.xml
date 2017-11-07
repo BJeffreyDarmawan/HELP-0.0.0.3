@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Map 6</name>
     <events>
+        <include>moveNfn</include>
         <event-group description="" sid="142405351338412" title="sungai berjalan3">
             <sub-events>
                 <event-block sid="509892025069370">
@@ -39,6 +40,26 @@
             <actions>
                 <action behavior="ScrollTo" id="1" name="Set enabled" sid="103768016699098" type="char">
                     <param id="0" name="State">1</param>
+                </action>
+                <action behavior="8Direction" id="8" name="Set enabled" sid="592141187516083" type="char">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="158120547853654">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="731177130177632" type="System">
+                    <param id="0" name="First value">char.X</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">1630</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="950383345630882" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="574475808332014" type="System">
+                    <param id="0" name="Layout">lv 9</param>
                 </action>
             </actions>
         </event-block>

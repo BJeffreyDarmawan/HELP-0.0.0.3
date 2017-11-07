@@ -79,6 +79,9 @@
                             <param id="0" name="Variable">conv</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action id="-16" name="Wait" sid="696612000005619" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
                         <action id="0" name="Call function" sid="429341336849104" type="Function">
                             <param id="0" name="Name">&quot;story&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
@@ -145,6 +148,9 @@
                         <condition id="-4" name="Trigger once while true" sid="715812084438653" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-16" name="Wait" sid="403068689098768" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
                         <action id="-10" name="Add to" sid="597737784425171" type="System">
                             <param id="0" name="Variable">story</param>
                             <param id="1" name="Value">1</param>

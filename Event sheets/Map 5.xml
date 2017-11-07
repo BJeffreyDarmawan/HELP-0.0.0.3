@@ -316,5 +316,22 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="157329698490093">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="736628915101164" type="System">
+                    <param id="0" name="First value">char.Y</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">891</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="561352505684702" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="602141703980446" type="System">
+                    <param id="0" name="Layout">Map 6</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
