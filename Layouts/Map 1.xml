@@ -1396,6 +1396,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="exclamation" uid="1035">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>123.012268066</x>
+                        <y>283.289855957</y>
+                        <z>0</z>
+                        <width>9.175154686</width>
+                        <height>21.867452621</height>
+                        <depth>0</depth>
+                        <hotspotX>0.433333337</hotspotX>
+                        <hotspotY>0.510489523</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>

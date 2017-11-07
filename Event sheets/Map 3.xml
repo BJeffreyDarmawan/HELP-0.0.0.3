@@ -317,13 +317,27 @@
         <event-block sid="265052136971464">
             <conditions>
                 <condition id="-8" name="Compare two values" sid="728204139490485" type="System">
-                    <param id="0" name="First value">ncess.Y</param>
+                    <param id="0" name="First value">ncess.X</param>
                     <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Second value">520</param>
+                    <param id="2" name="Second value">900</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="527637614676970" type="ncess" />
+            </actions>
+        </event-block>
+        <event-block sid="487400607463515">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="493195426828476" type="System">
+                    <param id="0" name="First value">ncess.Y</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">400</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="660459389767159" type="ncess">
+                    <param id="0" name="Angle">0</param>
+                </action>
             </actions>
         </event-block>
     </events>

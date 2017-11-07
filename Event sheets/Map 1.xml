@@ -589,5 +589,33 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="450855052006852">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="474467200540793" type="System">
+                    <param id="0" name="First value">xml.StringValue(&quot;/story/conversation[@id=&apos;conv&quot;&amp;conv-1&amp;&quot;&apos;]/text()&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;You!&quot;</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="620946182645758" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="920791317700712" type="exclamation">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action disabled="1" id="-16" name="Wait" sid="320869239167090" type="System">
+                    <param id="0" name="Seconds">0.7</param>
+                </action>
+                <action disabled="1" id="-9" name="Destroy" sid="212209692506920" type="exclamation" />
+            </actions>
+        </event-block>
+        <event-block sid="152134693762680">
+            <conditions>
+                <condition id="1" name="On any click" sid="846637453383071" type="Mouse" />
+                <condition id="-9" name="Is visible" sid="951355828737021" type="exclamation" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="289125955097651" type="exclamation" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

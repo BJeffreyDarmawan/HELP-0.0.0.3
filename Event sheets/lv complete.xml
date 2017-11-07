@@ -54,9 +54,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="213047588504063" type="Text">
-                            <param id="0" name="Text">&quot;AAAAAAAAAAA&quot;</param>
-                        </action>
                         <action id="-16" name="Set opacity" sid="514354062297947" type="TiledBackground">
                             <param id="0" name="Opacity">TiledBackground.Opacity+3</param>
                         </action>
@@ -76,11 +73,7 @@
                             <param id="1" name="Opacity">100</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="988615744643966" type="Text">
-                            <param id="0" name="Text">TiledBackground.Opacity</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
             </sub-events>
         </event-block>
@@ -177,6 +170,40 @@
                 </action>
                 <action id="1" name="Get item" sid="596960947037462" type="LocalStorage">
                     <param id="0" name="Key">&quot;user3&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="557000523672188">
+            <conditions>
+                <condition id="0" name="On function" sid="787358476074841" type="Function">
+                    <param id="0" name="Name">&quot;gameComplete&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="670476779167421" type="System">
+                    <param id="0" name="Object to create">TiledBackground</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+                <action id="-3" name="Create object" sid="428082213208124" type="System">
+                    <param id="0" name="Object to create">congrats</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">OriginalWindowWidth/2</param>
+                    <param id="3" name="Y">OriginalWindowHeight/2</param>
+                </action>
+                <action id="-3" name="Create object" sid="809360663664047" type="System">
+                    <param id="0" name="Object to create">Text</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">OriginalWindowWidth/2</param>
+                    <param id="3" name="Y">OriginalWindowHeight/2 + 40</param>
+                </action>
+                <action id="0" name="Set text" sid="795665403039800" type="Text">
+                    <param id="0" name="Text">&quot;YOU HAVE FINISHED THE WHOLE GAME&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="772158991976923" type="Function">
+                    <param id="0" name="Name">&quot;re&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
         </event-block>

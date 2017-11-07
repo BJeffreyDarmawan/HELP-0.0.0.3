@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>lv 9</name>
     <events>
+        <include>lv complete</include>
         <event-block sid="827541620772755">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="986187766535368" type="System" />
@@ -21,7 +22,38 @@
                     <param id="0" name="Audio file">twinkletwinkle_cut</param>
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                    <param id="1" name="Tag (optional)">&quot;twinkle&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="397118492681998">
+            <conditions>
+                <condition id="0" name="On ended" sid="386718584185686" type="Audio">
+                    <param id="0" name="Tag">&quot;twinkle&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="998090976705616" type="Function">
+                    <param id="0" name="Name">&quot;gameComplete&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="943000871742529">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="136511896999765" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">TiledBackground</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="167543804015231" type="TiledBackground">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="188965716820132" type="System">
+                    <param id="0" name="Layout">Main Menu</param>
                 </action>
             </actions>
         </event-block>

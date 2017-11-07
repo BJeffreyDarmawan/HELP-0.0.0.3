@@ -5,7 +5,6 @@
     <events>
         <include>lv complete</include>
         <variable constant="0" name="sprOp" sid="329658545110015" static="0" type="number">100</variable>
-        <variable constant="0" name="numOfApple" sid="762284892221801" static="0" type="number">0</variable>
         <event-block sid="140132884672171">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="783757661553264" type="System" />
@@ -19,23 +18,6 @@
                 </action>
                 <action behavior="Bullet" id="3" name="Set angle of motion" sid="516337831430720" type="Apple">
                     <param id="0" name="Angle">90</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="218305990303887">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="375811063321880" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Apple</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="120655695479745" type="Text">
-                    <param id="0" name="Text">numOfApple</param>
-                </action>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="726227728197119" type="Apple">
-                    <param id="0" name="State">1</param>
                 </action>
             </actions>
         </event-block>
@@ -112,25 +94,6 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="789335133467279">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="420230251161281" type="System">
-                    <param id="0" name="Variable">numOfApple</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">5</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="448473637592678" type="System">
-                    <param id="0" name="Variable">numOfApple</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="0" name="Call function" sid="739226159369334" type="Function">
-                    <param id="0" name="Name">&quot;lv_complete&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="699335556555184">
             <conditions>
                 <condition id="6" name="On object clicked" sid="909826114885943" type="Mouse">
@@ -154,24 +117,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="926327736715693">
-            <conditions>
-                <condition behavior="Bullet" id="1" name="Compare distance travelled" sid="657708221840981" type="Apple">
-                    <param id="0" name="Comparison">5</param>
-                    <param id="1" name="Distance">300</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="837326423130201" type="Apple">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action id="-9" name="Destroy" sid="868448515567151" type="Apple" />
-                <action id="-10" name="Add to" sid="311837487329338" type="System">
-                    <param id="0" name="Variable">numOfApple</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="988237792862127">
             <conditions>
                 <condition id="6" name="On object clicked" sid="117347746628984" type="Mouse">
@@ -188,5 +133,95 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="615314634905768" title="apple">
+            <sub-events>
+                <variable constant="0" name="c" sid="989060633589529" static="1" type="number">0</variable>
+                <variable constant="0" name="numOfApple" sid="762284892221801" static="1" type="number">0</variable>
+                <event-block sid="935068255645187">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="148915803956005" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="556620203824652" type="Conversation">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="853178240542217" type="Conversation_bg">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="282388801733718" type="Conversation">
+                            <param id="0" name="Text">&quot;Click 5 apples&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="193822743489848" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="715010691686332" type="Conversation" />
+                        <action id="-9" name="Destroy" sid="700684187021578" type="Conversation_bg" />
+                        <action id="-10" name="Add to" sid="846266449948881" type="System">
+                            <param id="0" name="Variable">c</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="218305990303887">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="375811063321880" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Apple</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="614903281087119" type="System">
+                            <param id="0" name="Variable">c</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="120655695479745" type="Text">
+                            <param id="0" name="Text">numOfApple</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="726227728197119" type="Apple">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="789335133467279">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="420230251161281" type="System">
+                            <param id="0" name="Variable">numOfApple</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="448473637592678" type="System">
+                            <param id="0" name="Variable">numOfApple</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="739226159369334" type="Function">
+                            <param id="0" name="Name">&quot;lv_complete&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="926327736715693">
+                    <conditions>
+                        <condition behavior="Bullet" id="1" name="Compare distance travelled" sid="657708221840981" type="Apple">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Distance">300</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="837326423130201" type="Apple">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="868448515567151" type="Apple" />
+                        <action id="-10" name="Add to" sid="311837487329338" type="System">
+                            <param id="0" name="Variable">numOfApple</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
