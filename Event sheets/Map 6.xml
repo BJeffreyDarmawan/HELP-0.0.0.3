@@ -44,6 +44,9 @@
                 <action behavior="8Direction" id="8" name="Set enabled" sid="592141187516083" type="char">
                     <param id="0" name="State">1</param>
                 </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="692055757374214" type="ncess">
+                    <param id="0" name="State">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="158120547853654">
@@ -61,6 +64,18 @@
                 <action id="-2" name="Go to layout" sid="574475808332014" type="System">
                     <param id="0" name="Layout">lv 9</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="486295018612833">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="654405011617034" type="System">
+                    <param id="0" name="First value">ncess.X</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">910</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="751536836331475" type="ncess" />
             </actions>
         </event-block>
     </events>

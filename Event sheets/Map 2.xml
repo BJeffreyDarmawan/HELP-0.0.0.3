@@ -258,6 +258,9 @@
                         <condition id="-4" name="Trigger once while true" sid="177461110149076" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-16" name="Wait" sid="357012798665598" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
                         <action id="-10" name="Add to" sid="628071508896100" type="System">
                             <param id="0" name="Variable">story</param>
                             <param id="1" name="Value">1</param>

@@ -168,6 +168,9 @@
                         <condition id="-4" name="Trigger once while true" sid="679397656261649" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-16" name="Wait" sid="204765960904723" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
                         <action id="-10" name="Add to" sid="490145943759139" type="System">
                             <param id="0" name="Variable">story</param>
                             <param id="1" name="Value">1</param>
@@ -188,7 +191,7 @@
                         <condition id="-14" name="Compare variable" sid="745447572957804" type="System">
                             <param id="0" name="Variable">story</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">20</param>
+                            <param id="2" name="Value">19</param>
                         </condition>
                         <condition id="-4" name="Trigger once while true" sid="856582845512752" type="System" />
                     </conditions>
@@ -246,7 +249,7 @@
                 <condition id="-14" name="Compare variable" sid="689893874003373" type="System">
                     <param id="0" name="Variable">story</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">19</param>
+                    <param id="2" name="Value">18</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="197387851082199" type="System">
                     <param id="0" name="Variable">beenHere</param>
