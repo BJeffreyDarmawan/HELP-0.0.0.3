@@ -314,6 +314,9 @@
                 <action id="5" name="Check item exists" sid="104621786438122" type="LocalStorage">
                     <param id="0" name="Key">&quot;user3&quot;</param>
                 </action>
+                <action id="0" name="Set text" sid="294109493453576" type="Text">
+                    <param id="0" name="Text">&quot;Click Your Name, then Click Load Game&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="670874655843593">

@@ -12,19 +12,19 @@
             <actions>
                 <action id="-3" name="Create object" sid="383153186361834" type="System">
                     <param id="0" name="Object to create">TiledBackground</param>
-                    <param id="1" name="Layer">3</param>
+                    <param id="1" name="Layer">5</param>
                     <param id="2" name="X">0</param>
                     <param id="3" name="Y">0</param>
                 </action>
                 <action id="-3" name="Create object" sid="170611382118417" type="System">
                     <param id="0" name="Object to create">lvComp</param>
-                    <param id="1" name="Layer">3</param>
+                    <param id="1" name="Layer">5</param>
                     <param id="2" name="X">427</param>
                     <param id="3" name="Y">231</param>
                 </action>
                 <action id="-3" name="Create object" sid="604852350601920" type="System">
                     <param id="0" name="Object to create">clicktoCont</param>
-                    <param id="1" name="Layer">3</param>
+                    <param id="1" name="Layer">5</param>
                     <param id="2" name="X">434</param>
                     <param id="3" name="Y">343</param>
                 </action>
@@ -170,6 +170,43 @@
                 </action>
                 <action id="1" name="Get item" sid="596960947037462" type="LocalStorage">
                     <param id="0" name="Key">&quot;user3&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="217581404097454">
+            <conditions>
+                <condition id="0" name="On function" sid="226101128295318" type="Function">
+                    <param id="0" name="Name">&quot;show_credits&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="680583487753228" type="System">
+                    <param id="0" name="Object to create">TiledBackground</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="683460254835766" type="TiledBackground">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-3" name="Create object" sid="437979961114786" type="System">
+                    <param id="0" name="Object to create">credits</param>
+                    <param id="1" name="Layer">4</param>
+                    <param id="2" name="X">50</param>
+                    <param id="3" name="Y">520</param>
+                </action>
+                <action id="-7" name="Set size" sid="534596516145991" type="credits">
+                    <param id="0" name="Width">480</param>
+                    <param id="1" name="Height">1080</param>
+                </action>
+                <action id="0" name="Set text" sid="580661534345319" type="credits">
+                    <param id="0" name="Text">&quot;&#x0D;&#x0A;Main Menu&#x0D;&#x0A;Bgm : bensound.com/royalty-free-music(ukulele)&#x0D;&#x0A;sound FX : freesfx.co.uk (glovebox open, short zip and pop)&#x0D;&#x0A;&#x0D;&#x0A;Lv4&#x0D;&#x0A;http://weclipart.com/gimg/FA6094E837ED24FB/stop-sign-clipart-1245686843838983065raemi_Stop_sign.svg (stop sign)&#x0D;&#x0A;&#x0D;&#x0A;Lv5&#x0D;&#x0A;http://cliparting.com/wp-content/uploads/2016/06/Grass-clip-art-free-free-clipart-images-4.png (lion grass)&#x0D;&#x0A;http://moziru.com/images/drawn-pond-3.png(shark pond)&#x0D;&#x0A;&#x0D;&#x0A;Lv 6&#x0D;&#x0A;http://soundbible.com&#x0D;&#x0A;https://hardianimalscience.files.wordpress.com/2015/04/no5_ill_chicken1.png?w=474(Ayam)&#x0D;&#x0A;https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Goat_cartoon_04.svg/1035px-Goat_cartoon_04.svg.png(Goat)&#x0D;&#x0A;http://clipart-library.com/clipart/gTeEkLXxc.htm(Sapi)&#x0D;&#x0A;&#x0D;&#x0A;Lvl 8&#x0D;&#x0A;http://www.pngmart.com/image/52297 (Troll)&#x0D;&#x0A;&#x0D;&#x0A;Lv 9 &#x0D;&#x0A;https://www.youtube.com/watch?v=yCjJyiqpAuU (TWINKLE)&#x0D;&#x0A;https://i.pinimg.com/236x/10/cd/09/10cd092f553c5ae456db36d0884e9b3f--nerd-stuff-labyrinth.jpg (MAZE)&#x0D;&#x0A;&#x0D;&#x0A;External Fonts:&#x0D;&#x0A;Bubblegum: https://www.dafont.com/bubblegum.font&#x0D;&#x0A;Big John: https://befonts.com/big-john-slim-joe-font.html&#x0D;&#x0A;&quot;</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="486633512529168" type="credits">
+                    <param id="0" name="Angle">-90</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="372705828955930" type="credits">
+                    <param id="0" name="State">1</param>
                 </action>
             </actions>
         </event-block>

@@ -67,11 +67,10 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="476083289995072" speed="5">
                         <frame duration="1" hotspotX="0.445698" hotspotY="1.11152" original-source="C:\Users\Wilson Fransicius\Desktop\bahana_FP\DRIVE\MAIN MENU\exit_button.png">
                             <collision-poly>
-                                <point x="0.00141044" y="0.591078" />
-                                <point x="0.444288" y="0.00371747" />
-                                <point x="0.997179" y="0.304833" />
-                                <point x="0.647391" y="0.996283" />
-                                <point x="0.242595" y="0.996283" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.98513" />
+                                <point x="0" y="1" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -83,11 +82,10 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849964804082082" speed="5">
                         <frame duration="1" hotspotX="0.445698" hotspotY="1.11152" original-source="C:\Users\Wilson Fransicius\Desktop\bahana_FP\DRIVE\MAIN MENU\load_button.png">
                             <collision-poly>
-                                <point x="0.00141044" y="0.591078" />
-                                <point x="0.444288" y="0.00371747" />
-                                <point x="0.997179" y="0.304833" />
-                                <point x="0.647391" y="0.996283" />
-                                <point x="0.242595" y="0.996283" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -99,11 +97,10 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="132444333358666" speed="5">
                         <frame duration="1" hotspotX="0.445698" hotspotY="1.11152" original-source="C:\Users\Wilson Fransicius\Desktop\bahana_FP\DRIVE\MAIN MENU\start_button.png">
                             <collision-poly>
-                                <point x="0.00141044" y="0.591078" />
-                                <point x="0.444288" y="0.00371747" />
-                                <point x="0.997179" y="0.304833" />
-                                <point x="0.647391" y="0.996283" />
-                                <point x="0.242595" y="0.996283" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -167,6 +164,21 @@
                                 <point x="0.532895" y="0.994737" />
                                 <point x="0.574561" y="0.985965" />
                                 <point x="0.182018" y="0.712281" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="credit_bt" sid="735249146888576">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="873276376087627" speed="5">
+                        <frame duration="1" hotspotX="0.51676" hotspotY="0.505576" original-source="D:\Jeff_v2\COMP SCI\MM-HCI\rsources\bt_credits.png">
+                            <collision-poly>
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -606,6 +618,14 @@
                         </frame>
                     </animation>
                 </animation-folder>
+            </object-type>
+            <object-type name="credits" sid="720675522609308">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="114075055511948">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
             </object-type>
         </object-folder>
         <object-folder name="Map(2)">
@@ -2514,10 +2534,14 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="click2cont" sid="649457167412862">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families>
         <family name="mainmenuButtons" plugin-id="Sprite" sid="784078290341237">
             <members>
+                <member>credit_bt</member>
                 <member>exitButton</member>
                 <member>loadButton</member>
                 <member>nameBut1</member>

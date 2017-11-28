@@ -218,6 +218,11 @@
             <sub-events>
                 <event-block sid="219039235494398">
                     <conditions>
+                        <condition id="-21" name="Is between values" sid="200155499469486" type="System">
+                            <param id="0" name="Value">char.Y</param>
+                            <param id="1" name="Lower bound">120</param>
+                            <param id="2" name="Upper bound">290</param>
+                        </condition>
                         <condition id="-14" name="Compare variable" sid="370254331425471" type="System">
                             <param id="0" name="Variable">beenHere</param>
                             <param id="1" name="Comparison">0</param>

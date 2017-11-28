@@ -10,14 +10,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Map 6</layout>
-        <layout order="2">Map 5</layout>
-        <layout order="3">Map 4</layout>
-        <layout order="5">lv 6</layout>
-        <layout order="6">lv 7</layout>
-        <layout active="1" order="7">Main Menu</layout>
-        <event-sheet order="1">Map 6</event-sheet>
-        <event-sheet order="4">Map 4</event-sheet>
+        <layout order="0">Main Menu</layout>
+        <layout order="1">StartMenu</layout>
+        <layout order="2">Load Menu</layout>
+        <layout order="3">lv complete</layout>
+        <layout order="5">Map 5</layout>
+        <event-sheet order="4">StartMenu</event-sheet>
+        <event-sheet active="1" order="6">Map 5</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -25,8 +24,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="0">
-        <family expanded="0" name="mainmenuButtons" />
+    <families-expanded root="1">
+        <family expanded="1" name="mainmenuButtons" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
@@ -34,7 +33,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/lv 1/" />
         <folder expanded="0" path="object-folder/Map(1)/" />
         <folder expanded="0" path="object-folder/Load Menu/" />
-        <folder expanded="1" path="object-folder/lvComplete/" />
+        <folder expanded="0" path="object-folder/lvComplete/" />
         <folder expanded="0" path="object-folder/Map(2)/" />
         <folder expanded="0" path="object-folder/lv 2/" />
         <folder expanded="0" path="object-folder/lv 3/" />
@@ -55,8 +54,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="layout-folder/maps/" />
         <folder expanded="1" path="layout-folder/menus/" />
         <folder expanded="1" path="layout-folder/levels/" />
-        <folder expanded="1" path="event-folder/" />
-        <folder expanded="1" path="event-folder/maps/" />
+        <folder expanded="0" path="event-folder/" />
+        <folder expanded="0" path="event-folder/maps/" />
         <folder expanded="0" path="event-folder/levels/" />
         <folder expanded="0" path="event-folder/menus/" />
         <folder expanded="1" path="file-folder/" />
@@ -70,6 +69,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/cursor/" />
         <folder expanded="1" path="animation-folder/titleFont/" />
         <folder expanded="1" path="animation-folder/princessAlice/" />
+        <folder expanded="1" path="animation-folder/credit_bt/" />
         <folder expanded="1" path="animation-folder/Orange/" />
         <folder expanded="1" path="animation-folder/Apple/" />
         <folder expanded="1" path="animation-folder/X/" />

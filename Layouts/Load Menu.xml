@@ -28,7 +28,28 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="TiledBackground" uid="78">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2</x>
+                        <y>-2</y>
+                        <z>0</z>
+                        <width>854</width>
+                        <height>483</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.75</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
         <layer name="buttons" sid="517532978927638">
@@ -221,7 +242,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="78">
+                <instance type="mm" uid="1042">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -231,14 +252,41 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>664</x>
-                        <y>193</y>
+                        <x>161</x>
+                        <y>457</y>
                         <z>0</z>
-                        <width>208</width>
-                        <height>173</height>
+                        <width>191.877044678</width>
+                        <height>49.821353912</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500965238</hotspotX>
+                        <hotspotY>1.323420048</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text" uid="1043">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Big John,-16,400,0</font>
+                        <color>255,255,51</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>627</x>
+                        <y>172</y>
+                        <z>0</z>
+                        <width>280</width>
+                        <height>98</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.50289017</hotspotY>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -305,6 +353,28 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="mm" uid="1041">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>72</x>
+                        <y>49</y>
+                        <z>0</z>
+                        <width>191.877044678</width>
+                        <height>49.821353912</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500965238</hotspotX>
+                        <hotspotY>1.323420048</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
