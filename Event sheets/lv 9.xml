@@ -33,27 +33,20 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Call function" sid="998090976705616" type="Function">
+                <action disabled="1" id="0" name="Call function" sid="998090976705616" type="Function">
                     <param id="0" name="Name">&quot;gameComplete&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="943000871742529">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="136511896999765" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">TiledBackground</param>
-                </condition>
-                <condition id="-10" name="Compare opacity" sid="167543804015231" type="TiledBackground">
-                    <param id="0" name="Comparison">0</param>
-                    <param id="1" name="Opacity">100</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="188965716820132" type="System">
-                    <param id="0" name="Layout">Main Menu</param>
+                <action id="-9" name="Set value" sid="690659973185855" type="System">
+                    <param id="0" name="Variable">beenHere</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="839982043296491" type="System">
+                    <param id="0" name="Variable">story</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="834516349937701" type="System">
+                    <param id="0" name="Layout">Map 7</param>
                 </action>
             </actions>
         </event-block>

@@ -11,12 +11,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Main Menu</layout>
-        <layout order="1">StartMenu</layout>
-        <layout order="2">Load Menu</layout>
-        <layout order="3">lv complete</layout>
-        <layout order="5">Map 5</layout>
-        <event-sheet order="4">StartMenu</event-sheet>
-        <event-sheet active="1" order="6">Map 5</event-sheet>
+        <event-sheet order="1">Map 2</event-sheet>
+        <event-sheet order="2">lv 5</event-sheet>
+        <event-sheet order="3">Map 5</event-sheet>
+        <event-sheet order="4">Map 7</event-sheet>
+        <event-sheet order="5">moveNfn</event-sheet>
+        <event-sheet active="1" order="6">lv 9</event-sheet>
+        <event-sheet order="7">lv complete</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -24,8 +25,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="1">
-        <family expanded="1" name="mainmenuButtons" />
+    <families-expanded root="0">
+        <family expanded="0" name="mainmenuButtons" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
@@ -54,13 +55,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="layout-folder/maps/" />
         <folder expanded="1" path="layout-folder/menus/" />
         <folder expanded="1" path="layout-folder/levels/" />
-        <folder expanded="0" path="event-folder/" />
-        <folder expanded="0" path="event-folder/maps/" />
-        <folder expanded="0" path="event-folder/levels/" />
-        <folder expanded="0" path="event-folder/menus/" />
-        <folder expanded="1" path="file-folder/" />
-        <folder expanded="1" path="sound-folder/" />
-        <folder expanded="1" path="music-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="event-folder/maps/" />
+        <folder expanded="1" path="event-folder/levels/" />
+        <folder expanded="1" path="event-folder/menus/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="0" path="sound-folder/" />
+        <folder expanded="0" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/exitButton/" />
         <folder expanded="1" path="animation-folder/loadButton/" />

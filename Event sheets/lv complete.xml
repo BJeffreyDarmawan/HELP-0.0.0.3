@@ -233,7 +233,7 @@
                     <param id="0" name="Object to create">Text</param>
                     <param id="1" name="Layer">2</param>
                     <param id="2" name="X">OriginalWindowWidth/2</param>
-                    <param id="3" name="Y">OriginalWindowHeight/2 + 40</param>
+                    <param id="3" name="Y">OriginalWindowHeight/2 + 120</param>
                 </action>
                 <action id="0" name="Set text" sid="795665403039800" type="Text">
                     <param id="0" name="Text">&quot;YOU HAVE FINISHED THE WHOLE GAME&quot;</param>

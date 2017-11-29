@@ -79,10 +79,8 @@
                     <sub-events>
                         <event-block sid="785670171164856">
                             <conditions>
-                                <condition id="6" name="On object clicked" sid="889768948925546" type="Mouse">
-                                    <param id="0" name="Mouse button">0</param>
-                                    <param id="1" name="Click type">0</param>
-                                    <param id="2" name="Object clicked">awan_elang</param>
+                                <condition id="7" name="Cursor is over object" sid="889768948925546" type="Mouse">
+                                    <param id="0" name="Object">awan_elang</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="500988152551451" type="System">
                                     <param id="0" name="Variable">MOUSECLICK</param>
@@ -107,10 +105,8 @@
                         </event-block>
                         <event-block sid="500328824537174">
                             <conditions>
-                                <condition id="6" name="On object clicked" sid="416921578959421" type="Mouse">
-                                    <param id="0" name="Mouse button">0</param>
-                                    <param id="1" name="Click type">0</param>
-                                    <param id="2" name="Object clicked">grass_lion</param>
+                                <condition id="7" name="Cursor is over object" sid="416921578959421" type="Mouse">
+                                    <param id="0" name="Object">grass_lion</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="927024682779046" type="System">
                                     <param id="0" name="Variable">MOUSECLICK</param>
@@ -135,10 +131,8 @@
                         </event-block>
                         <event-block sid="316536244295581">
                             <conditions>
-                                <condition id="6" name="On object clicked" sid="333474351380333" type="Mouse">
-                                    <param id="0" name="Mouse button">0</param>
-                                    <param id="1" name="Click type">0</param>
-                                    <param id="2" name="Object clicked">pohon_monyet</param>
+                                <condition id="7" name="Cursor is over object" sid="333474351380333" type="Mouse">
+                                    <param id="0" name="Object">pohon_monyet</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="593471717027637" type="System">
                                     <param id="0" name="Variable">MOUSECLICK</param>
@@ -163,10 +157,8 @@
                         </event-block>
                         <event-block sid="838926040734172">
                             <conditions>
-                                <condition id="6" name="On object clicked" sid="741485263583474" type="Mouse">
-                                    <param id="0" name="Mouse button">0</param>
-                                    <param id="1" name="Click type">0</param>
-                                    <param id="2" name="Object clicked">pond_frog</param>
+                                <condition id="7" name="Cursor is over object" sid="741485263583474" type="Mouse">
+                                    <param id="0" name="Object">pond_frog</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="987458632053054" type="System">
                                     <param id="0" name="Variable">MOUSECLICK</param>
@@ -191,10 +183,8 @@
                         </event-block>
                         <event-block sid="884999709104166">
                             <conditions>
-                                <condition id="6" name="On object clicked" sid="651223887644534" type="Mouse">
-                                    <param id="0" name="Mouse button">0</param>
-                                    <param id="1" name="Click type">0</param>
-                                    <param id="2" name="Object clicked">rumput_kucing</param>
+                                <condition id="7" name="Cursor is over object" sid="651223887644534" type="Mouse">
+                                    <param id="0" name="Object">rumput_kucing</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="434974392245160" type="System">
                                     <param id="0" name="Variable">MOUSECLICK</param>
@@ -209,20 +199,42 @@
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;kitten&quot;</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="392813949385578" type="kitten">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action behavior="Fade" id="1" name="Start fade" sid="522262222599372" type="kitten" />
                                 <action id="-16" name="Wait" sid="726335647500827" type="System">
                                     <param id="0" name="Seconds">1.3</param>
                                 </action>
-                                <action id="0" name="Call function" sid="784430291140991" type="Function">
-                                    <param id="0" name="Name">&quot;lv_complete&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
+                                <action id="6" name="Stop" sid="372485591367353" type="Audio">
+                                    <param id="0" name="Tag">&quot;kitten&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="475596692762199">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="852313326527909" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">rumput_kucing</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="242908042233640" type="System">
+                            <param id="0" name="Variable">MOUSECLICK</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="943564047432231" type="kitten">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="753990880167315" type="kitten" />
+                        <action id="-16" name="Wait" sid="439871659948807" type="System">
+                            <param id="0" name="Seconds">1.3</param>
+                        </action>
+                        <action id="0" name="Call function" sid="704896635968175" type="Function">
+                            <param id="0" name="Name">&quot;lv_complete&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="181103148277229">
                     <conditions>

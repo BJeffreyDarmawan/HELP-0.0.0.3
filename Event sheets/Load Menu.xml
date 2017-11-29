@@ -587,7 +587,7 @@
                         <condition id="-21" name="Is between values" sid="618860187411797" type="System">
                             <param id="0" name="Value">story</param>
                             <param id="1" name="Lower bound">17</param>
-                            <param id="2" name="Upper bound">22</param>
+                            <param id="2" name="Upper bound">20</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -596,7 +596,93 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="130354521963945">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="798738276780406" type="System">
+                            <param id="0" name="Variable">story</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">21</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="324884056928218" type="System">
+                            <param id="0" name="Layout">Map 6</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="485207476255160">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="407342983865680" type="System">
+                            <param id="0" name="Variable">story</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">22</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="709987340022622" type="System">
+                            <param id="0" name="Layout">Map 7</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="215274778058806">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="307762315419713" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">mm</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="386357263666431" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="761251947284663" type="System">
+                    <param id="0" name="Layout">Main Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="457484734386515">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="870924880483904" type="Mouse">
+                    <param id="0" name="Object">mm</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Compare two values" sid="783019832672493" type="System">
+                    <param id="0" name="First value">mm.Width</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">200</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="813180510954650" type="mm">
+                    <param id="0" name="Width">200</param>
+                    <param id="1" name="Height">55</param>
+                </action>
+                <action id="25" name="Play at object" sid="288745656364047" type="Audio">
+                    <param id="0" name="Audio file">toolur_dettpp</param>
+                    <param id="1" name="Loop">0</param>
+                    <param id="2" name="Volume">25</param>
+                    <param id="3" name="Object">mainmenuButtons</param>
+                    <param id="4" name="Inner angle">360</param>
+                    <param id="5" name="Outer angle">360</param>
+                    <param id="6" name="Outer gain">0</param>
+                    <param id="7" name="Tag (optional)">&quot;http://www.freesfx.co.uk&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="604159577760819">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="529968293052209" type="Mouse">
+                    <param id="0" name="Object">mm</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="980897425323651" type="mm">
+                    <param id="0" name="Width">190</param>
+                    <param id="1" name="Height">50</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

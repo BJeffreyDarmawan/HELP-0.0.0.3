@@ -26,7 +26,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <active-layer name="conv" />
     <layers>
         <layer locked="1" name="Layer 0" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="animals" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="animals" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="q_marks" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="conv" parallax-in-editor="0" visible="1" />
     </layers>

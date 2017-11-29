@@ -2560,6 +2560,7 @@
             <layout>Map 4.xml</layout>
             <layout>Map 5.xml</layout>
             <layout>Map 6.xml</layout>
+            <layout>Map 7.xml</layout>
         </layout-folder>
         <layout-folder name="menus">
             <layout>Main Menu.xml</layout>
@@ -2587,6 +2588,7 @@
             <event-sheet>Map 4.xml</event-sheet>
             <event-sheet>Map 5.xml</event-sheet>
             <event-sheet>Map 6.xml</event-sheet>
+            <event-sheet>Map 7.xml</event-sheet>
         </event-folder>
         <event-folder name="levels">
             <event-sheet>lv 1.xml</event-sheet>
